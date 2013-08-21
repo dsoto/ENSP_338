@@ -7,6 +7,13 @@ sotod@sonoma.edu <br />
 Department of Environmental Studies and Planning <br />
 Sonoma State University <br />
 
+<!--
+syllabus guidelines:
+http://www.sonoma.edu/uaffairs/policies/courseoutline.htm
+
+to create html file:
+pandoc -s % -c soto.css -o %:r.html
+-->
 
 ## Course Description
 An overview of energy management approaches in residential and
@@ -54,6 +61,8 @@ Other readings will be posted online to Moodle.
 
 
 ## Course Schedule
+
+This course schedule is tentative and subject to change.
 
 <table>
 <tr><td> Date       </td><td> Topic                      </td><td> Assignment     </td></tr>
