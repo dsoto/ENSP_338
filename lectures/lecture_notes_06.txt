@@ -1,0 +1,64 @@
+% Lecture 6, 11 Sept 2013
+% ENSP 338
+% Daniel Soto, Sonoma State University
+
+## Electricity end use
+- [U.S. Energy Information Administration](http://www.eia.gov/tools/faqs/faq.cfm?id=96&t=3)
+![](./figures/electricity_end_use.jpg)
+
+## Total electric generation capacity
+![](./figures/total_electric_capacity.pdf)
+
+## Electricity sankey diagram
+![](./figures/electricity_sankey.pdf)
+
+## Energy Independence and Security Act of 2007
+- [Link to text of law](http://www.gpo.gov/fdsys/pkg/PLAW-110publ140/pdf/PLAW-110publ140.pdf)
+- Originally called the Clean Energy Act
+- Title I, Vehicle Efficiency
+- Title II, Biofuel
+- Title III, Appliance and Lighting Efficiency
+- Title IV, Building Efficiency
+
+<!--
+- why do you think the name changed
+- lets read through the provisions
+- what is a mandate?
+- what is a tax credit?
+- what is a subsidy?
+- carrots and sticks
+- what is a loan guarantee (promise to assume debt after default)
+- lightbulb stuff page 87
+- is this a curtailment of freedom?
+- should i be free to buy whatever lightbulb i want?
+-->
+
+## Global Warming Solutions Act of 2006
+- [Link to text of law](http://www.arb.ca.gov/cc/docs/ab32text.pdf)
+- California Assembly Bill 32 (AB 32)
+- Reduces California greenhouse gas emissions to 1990 levels by 2020
+- Greenhouse gas reporting
+- Greenhouse gas limit
+
+<!--
+- what do you think about this name
+- lets read
+- what reasons were given in the beginning?
+-->
+
+## Financing efficiency
+- How do we pay for efficiency upgrades?
+- Upfront payment requires access to capital
+- Financing is another option
+
+<!--
+- How does financing work?
+- how do you buy a car?
+- how do you calculate a monthly payment?
+-->
+
+## Time value of money
+- You have a choice between receiving $1K today or another sum in one
+  year.  How large does that sum need to be for you to choose the payment in
+  one year?
+
