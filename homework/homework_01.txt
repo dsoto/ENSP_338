@@ -1,0 +1,94 @@
+# ENSP 338 Homework Number 1
+
+Due Date:	September 16, 2013
+
+1. Your Basic Toaster Oven
+
+    a. A toaster oven has a resistance of 24$\Omega$.  At a voltage of 120V,
+    what is the current through it, and how many watts of power does it
+    draw?
+
+    b. Repeat for a toaster oven with a resistance of 12$\Omega$.
+
+    c. Assuming it takes 1 minute to toast two pieces of bread using the
+    toaster oven with a resistance of 12$\Omega$, and electricity costs
+    \$0.13/kWh, what is the cost of the electricity used to toast two
+    pieces of bread?
+
+    d. Explain in your own words why a load with lower resistance draws
+    more power.
+
+2. Your Basic Bulb
+
+    a. An incandescent light bulb is rated 40W at 120V.  What is its
+    resistance in ohms, and what is the current?
+
+    b. Repeat for an incandescent light bulb rated 60W.
+
+3. Your Basic Battery
+
+    a. A battery can deliver 100 amp-hours (Ah) at 12V.  How much stored
+    energy does it have, in kilowatt-hours?  In joules?
+
+    b. Find a rechargeable battery. Note its charging voltage and
+    amp-hour capacity, and calculate the stored energy in kWh and J.
+    Based on your observation of how many hours it takes to charge this
+    battery when depleted, estimate the charging current in amperes and
+    charging power in watts.
+
+4. 	Shocking Science
+
+    a. While fixing a light in Germany, Prof. von Meier accidentally
+    touched a hot wire at 220V.  What would the resistance of her shoes
+    (which we assume to be the most significant resistance in the
+    circuit) have to be so that the current through her body would not
+    exceed 50 milliamps (mA)?
+
+    b. Why is it inadvisable to perform electrical work while standing
+    in a puddle of water, and 	why are wooden ladders preferable to
+    aluminum?
+
+    c. Why do electricians touch their pinkie to the wall while touching
+    a wire with their thumb?
+
+5. 	Extrapolating from your PG&E bill
+
+    Find a recent PG&E bill for your house or a friend's.
+
+    a. 	Estimate the total connected load in this residence, and think
+    about the typical times for which appliances are used.  Does the
+    bill make sense?
+
+    Example: Bathroom lights, 150W * 3 hrs/day * 30 d/mo = 13.5 kWh/mo
+
+    Hair dryer, 1000W * 5 min/d * 30d/mo * 1 hr/60min = 2.5 kWh/mo
+
+    Electric toothbrush charger, 4W * 24h/d * 30d/mo = 2.8 kWh/mo
+
+    Total bathroom = 19 kWh/mo
+
+    Carry out this estimate for your whole house.
+
+    b. From the total billed monthly electric energy (kWh) consumption,
+    calculate the average rate of power consumption in watts.
+
+    c. Based on things you know (U.S. population, etc), estimate the
+    average rate of electric power consumption in the United States, in
+    multiples of watts.
+
+    d. Convert the average figure from c. into kilowatt-hours (kWh) per year.
+
+    e. On the internet, see if you can verify that you got the correct
+    order of magnitude in your estimate in d.
+
+
+## Problems from REEPS
+
+Solve the following problems at the end of chapter 2 in the REEPS text.
+
+Problems:  2.6, 2.9
+
+## Time management
+
+Estimate how much time you spent working on this problem set to the
+nearest hour.
