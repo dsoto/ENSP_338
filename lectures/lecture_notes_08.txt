@@ -1,0 +1,76 @@
+% Lecture 8, 18 Sept 2013
+% ENSP 338
+% Professor Daniel Soto, Sonoma State University
+
+<!--
+announcements
+
+-
+-->
+
+<!--
+use pats lecture notes lecture 10
+use figures from gils book
+can use rigol folder for real current voltage sweeps
+look in lab books around aug 2011 for what i was doing
+-->
+
+## DC vs AC
+- What does 120V mean?
+
+## Motivation
+- Most electricity uses alternating current
+- Understanding the mathematics is necessary to understand the
+  implications of alternating current
+
+## What frequency is US electricity
+
+<!--
+Use multimeter to measure voltage
+-->
+
+## Sine and Cosine Review
+
+## Ohms Law
+- $V = IR$
+- $V = V_m \cos(\omega t)$
+
+
+## Power
+- $P = VI$
+- $P = V_m^2/R \cos^2(\omega t)$
+- This is the instantaneous power.
+- We are instead interested in the average.
+
+## RMS
+![](./figures/rms_power.png)
+
+## Complex Numbers Review
+- $i = \sqrt{-1}$
+
+## Complex Plane
+![](./figures/complex_plane.png)
+
+## Representations of sinusoidal signals
+- sinusoids
+- phasors
+
+
+<!--
+most of this lecture was on the whiteboard
+-->
+
+## Exercise
+
+## Instantaneous power
+
+
+## RMS
+
+## Power Factor
+- Line losses increase to provide the same power at low power factor.
+
+<!--
+demonstrate that when you get out of phase, you must deliver more
+current to get the same average power.
+-->
