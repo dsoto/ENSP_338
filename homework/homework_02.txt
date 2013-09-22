@@ -1,0 +1,77 @@
+# ENSP 330 Homework 2
+
+Due Date:  Wed 17 Oct 2013
+
+## Problem 1
+
+### Gauging the Wires
+
+Peruse the tabulated data in the Wikipedia articles on American Wire Gauge and
+Electrical Resistivities of the Elements.
+
+a. From the resistivity of copper, and from the wire dimensions in the AWG
+table, confirm the resistance of 12-gauge copper wire, in ohms per kilometer,
+that is listed in the table.  Show your work, which will include unit
+conversions.  Assume room temperature.
+
+b. Calculate the resistance of 12 AWG aluminum wire in ohms/km at room
+temperature. Why is copper preferred over aluminum conductor, even though it is
+more expensive?
+
+## Problem 2
+
+### Voltage Drop
+
+A 2 ohm resistor is connected to a power source 100m away, with 12 AWG copper
+wire. The current is 10A. What is the voltage across the resistor, and what is
+the voltage supplied by the power source?
+
+
+## Problem 3
+
+### Christmas Lights
+
+a. Consider a string of Christmas lights with 50 bulbs connected in series.
+The voltage across the entire string is 120V.  What is the voltage drop across
+each individual bulb?
+
+b. If each bulb draws 4W, what is its resistance?
+
+c. What is the current through each bulb?
+
+d. Through the entire string?
+
+
+## Problem 4
+
+### The curse of the extension cord
+
+The following appliances are found in a studio kitchen: a 600 W toaster, 3
+lights @ 100 W each, and a 800W microwave oven (which you may assume to behave
+like a resistor). Assume a nominal voltage of 120V ac.
+
+a. Will a single 15A circuit be able to handle all these loads operating at the
+same time?
+
+b. What is the resistance of each load?
+
+c. Suppose all these appliances are plugged into a power strip at the end of a
+long extension cord. The cord has a resistance of 0.2 ohms. How much power is
+dissipated in the cord? Do you think this might be a problem?
+
+d. What is the voltage drop in the extension cord? If the voltage at the outlet
+is exactly 120.0V, what is the voltage seen by the loads?
+
+e. How much power does each appliance actually draw under these conditions?
+
+## Problem 5
+
+Name two reasons why an AC power grid with transmission voltages of several
+hundred kVolts and residential service at 120 -- 240 V AC is better suited to a
+national power grid than a DC system with generation at 600 Volts and
+residential service at 24 Volts.
+
+
+## Problem 6
+
+REEPS2 Problem 2.11
