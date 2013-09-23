@@ -1,0 +1,83 @@
+% Lecture 9, 23 Sept 2013
+% ENSP 338
+% Professor Daniel Soto, Sonoma State University
+
+<!--
+use pats lecture notes lecture 10
+use figures from gils book
+-->
+
+## Announcements
+
+<!--
+announcements
+- obama EPA announcement
+- implications for electricity prices
+-->
+
+# Review
+
+## Complex numbers
+
+## Euler's law
+![](./figures/Eulers_formula.png)
+
+## Sinusoidal functions
+- Cosine
+- Graphical Derivative
+
+## Exercise
+- Express the voltage available in a US outlet as a cosine function of
+  the form $A \cos \omega t$
+
+## Exercise Solution
+- $169.7 \cos 376.8 t$
+
+## Linear Circuit Elements
+- Resistors
+- Capacitors
+- Inductors
+
+# Capacitors
+
+## Capacitors
+- Storage device
+- Stores energy in an electric field
+- Behavior depends on frequency
+- Ideal capacitor consumes no power
+
+## Capacitors
+![](./figures/capacitor.pdf)
+
+## Capacitors
+[Utility Capacitor
+Bank](http://en.wikipedia.org/wiki/File:Condensor_bank_150kV_-_75MVAR.jpg)
+![](./figures/capacitor_bank.png)
+
+## Capacitors
+- The capacitance tells how much charge can be stored at a given voltage
+- C = Q/V
+- Expressed in units of Farads
+
+## Capacitors
+- The current is proportional to the time rate of change of the voltage
+  applied to the capacitor
+- I = C dv/dt
+
+## Exercise
+- Based on the relationship $I = C dv/dt$, what is the current in a
+  capacitor when hooked up to a DC voltage source?
+
+## Exercise Solution
+- The time rate of change of a DC voltage source is zero so the current
+  is zero.
+
+## Exercise
+- We attach a 10 microfarad capacitor to a 120 Volt RMS source
+  represented as a cosine $170 \cos 377 t$
+- Sketch the voltage waveform
+- Sketch the current waveform based on the $I = C dv/dt$ relationship
+  and note the amplitude and phase shift
+- Express the current mathematically
+
+
