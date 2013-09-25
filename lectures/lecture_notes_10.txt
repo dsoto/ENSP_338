@@ -1,0 +1,138 @@
+% Lecture 10, 25 Sept 2013
+% ENSP 338
+% Professor Daniel Soto, Sonoma State University
+
+<!--
+announcements
+- problem set revision
+- draw pictures
+- must be highly legible
+- suggest typeset
+- opportunity for makeup
+- you will be paid for this soon
+
+- pizza with freshmen
+- community crime environmental prevention
+-->
+
+<!--
+- connect sinusoidal picture to phasor picture
+- directly reference the formulas from the text
+-->
+
+# Review
+
+## Review
+- Sinusoids
+- Complex numbers
+- Phasor representation
+- Resistors on AC
+- Capacitors
+
+## Complex numbers
+- Possess magnitude and phase making them a natural fit for expressing
+  the relationship between sinusoids of the same frequency
+
+##
+![](./figures/real_number_line.jpg)
+
+##
+![](./figures/complex_plane.jpg)
+
+## AC Voltage
+![](./figures/sine_function.jpg)
+
+## Resistor with Alternating Current
+![](./figures/ac_resistor.jpg)
+
+## Resistor power with Alternating Current
+![](./figures/ac_resistor_power.jpg)
+
+## Capacitors
+![](./figures/capacitor.jpg)
+
+## Capacitors
+![](./figures/capacitive_reactance.jpg)
+
+## Capacitor with Alternating Current
+
+## Equivalence of sinusoid and phasor representation
+![](./figures/capacitance_reactance.jpg)
+
+##
+![](./figures/capacitor_inductor_phasor.pdf)
+
+##
+- Reactance
+- Impedance
+- Resistance
+
+##
+![](./figures/capacitor_inductor_phases.jpg)
+
+<!--
+if you put a comment block after an H1, things break
+-->
+
+
+<!--
+- this is where we are headed
+- that and complex power
+-->
+
+# Complex Impedance
+
+## Complex Impedance
+- $Z = R + jX$
+- $X = X_L - X_C$
+- $X = \omega L - \frac{1}{\omega C}$
+
+## Complex Impedance
+- This is an extension of ohms law
+- $V = IR$
+- $V = IZ$
+- $Z = V/I$
+- What if voltage and current are out of phase?
+- We use complex numbers to express the phase differences
+
+## Complex Impedance
+- Same rules for series and parallel apply
+- However, now we use complex numbers
+
+##
+![](./figures/complex_impedance.jpg)
+
+
+
+# Inductors
+
+## Inductor
+- Storage device
+- Stores energy in a magnetic field
+- Behavior depends on frequency
+- Ideal inductor consumes no power
+
+## Inductor
+![](./figures/sjsu_inductor.jpg)
+
+## Inductor
+- Expressed in units of Henries
+
+## Inductors
+- The voltage is proportional to the time rate of change of the current.
+- v = L di/dt
+
+##
+![](./figures/capacitor_inductor_phases.jpg)
+
+##
+![](./figures/inductive_reactance.jpg)
+
+## Exercise
+- Attach a 10 millihenry inductor to a 120 Volt RMS source represented
+  as $170 \cos 377 t$
+- Sketch the voltage waveform
+- Sketch the current waveform based on the $V = L di/dt$ relationship
+  and note the amplitude and phase shift
+- Express the current mathematically
+
