@@ -1,6 +1,6 @@
-# ENSP 330 Homework 2
+# ENSP 338 Homework 2
 
-Due Date:  Wed 17 Oct 2013
+Due Date:  Wed 2 Oct 2013
 
 ## Problem 1
 
