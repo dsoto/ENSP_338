@@ -2,6 +2,12 @@
 
 Due Date:  Wed 2 Oct 2013
 
+The problem set you turn in should be both legible and the methods and
+assumptions you are using must be clear.  I strongly suggest that
+you use diagrams where appropriate and clearly state your assumptions.
+Typesetting of problem sets can increase the readability.  These set
+will be graded on the clarity of the method as much as the result.
+
 ## Problem 1
 
 ### Gauging the Wires
