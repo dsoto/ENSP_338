@@ -1,4 +1,4 @@
-## Ohms Law
+# 2013 ENSP 338 Preliminary Schedule
 
 
 ## 1. Introduction
