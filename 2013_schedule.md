@@ -47,43 +47,19 @@ REEPS2 2.1 -- 2.4
 ### Reading
 REEPS2 appendix A
 
-### ???
-- significant uses of electric energy
-- significant impacts of electric energy generation
-- what does electricity really cost?
-- what is electricity carbon output
-- power and energy units and cost
-- exercises on how much power a load uses in n hours
-- what is electricity appropriate for? computers vs electric heating
-- inappropriate
-- expensive?
 
 
-## 7. 2013-09-16 Efficiency Economics
+## 7. 2013-09-16
 
 ### Reading
 REEPS2 3.1 -- 3.4
 
-- problem set 1 due
+### problem set 1 due
+
+### Efficiency Economics
 - time value of money
 - NPV
 - IRR
-- How does NPV look for infinite payments?
-- At different discount rates?
-- conceptual questions
-    - given an equal discount rate, is a payment two years from now
-      worth more or less than a payment one year from now
-    - what is the value of a payment as the time grows large?
-    - linearity show two payment streams and that they sum at same
-      discount rate
-- learning objectives
-    - calculate NPV of payment stream
-    - understand IRR
-    - develop intuition for time value of money
-- carbon impact of electricity
-    - state by state carbon intensity
-    - calculation of carbon per kWh
-    - comparison to ICE vehicle?
 
 
 ## 8. Wed 18 Sep 2013
@@ -147,7 +123,10 @@ REEPS2 3.1 -- 3.4
 - constant power flow
 - zero return current
 
-### List of possible research topics due
+### Homework 1 Makeup Due
+
+### Research project topic presentation due
+- (Milestone 2)
 
 ### Reading
 - REEPS2 3.8 -- 3.9
