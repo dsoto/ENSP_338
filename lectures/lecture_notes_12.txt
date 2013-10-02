@@ -1,0 +1,102 @@
+% Lecture 12, 2 Oct 2013
+% ENSP 338
+% Professor Daniel Soto, Sonoma State University
+
+
+## Announcements
+- Vegetable garden volunteers wanted
+- Class facebook group
+
+
+## Upcoming Deadlines
+- Homework 2 due today
+- Homework 1 makeup due Monday, October 7th
+- 2 minute research topic presentations Monday, October 7th
+- Problem Set 3 Due Monday, October 14th
+- Midterm Exam Wednesday, October 16th
+
+# Review
+
+## Power Factor
+- We can represent any collection linear elements as an equivalent black
+  box having a power factor
+- Expresses how much of the power is real vs reactive (out of phase)
+- $S = VI^*$
+
+## Power factor
+- We introduce two new types of power
+- S, apparent power
+- P, real power
+- Q, reactive power
+
+## Complex Power
+![](./figures/complex_power.jpg)
+
+<!--
+## Complex Power
+![](./figures/complex_power_2.jpg)
+-->
+
+## Apparent Power
+$$ S = VI $$
+- RMS voltage times RMS current
+- dictates how much current flows from the grid to the load
+
+## Real Power
+$$ P = VI \cos \phi $$
+- RMS voltage times the portion of current in phase with the voltage
+
+## Reactive Power
+$$ Q = VI \sin \phi $$
+- RMS voltage times the portion of the current out of phase with the
+  voltage
+
+## Power Triangle Example
+
+## Impact on tariffs
+- Utilities can charge for power factor less than 1
+- Peak kVA charge
+
+## Impact of power factor
+- 20% of grid losses
+- 1.5% of all electricity
+
+
+## Power factor correction
+- In practice, most loads with power factor less than one are inductive
+- We can often correct the power factor by including a capacitor
+
+## Types of loads
+
+### Purely resistive
+- Incandescent bulbs
+- Toasters
+- Space heaters
+
+### Motors
+- Pumps for refrigerators and air conditioners
+- Power tools
+- Blenders, mixers
+
+## Power factor correction example
+
+## High Voltage Capacitor
+- 100 kVAR capacitor
+- ![](./figures/100KVAR_capacitor.jpg)
+
+
+
+
+## Transformers
+- Allow for the simple conversion of AC voltages from high to low or
+  from low to high
+- Are the reason for the ubiquity of AC distribution
+- Use magnetic fields
+
+## Transformers
+![](./figures/transformer_diagram.pdf)
+
+## Transformers
+$$ \frac{V_1}{V_2} = \frac{N_1}{N_2} $$
+- The ratio of voltages is equal to the ratio of turns of wire on the
+  transformer sides

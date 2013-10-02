@@ -1,0 +1,67 @@
+% Lecture 11, 30 Sept 2013
+% ENSP 338
+% Professor Daniel Soto, Sonoma State University
+
+
+## Announcements
+- IPCC AR5 Summary for Policy Makers
+- Research project
+- Problem Set 2
+- Problem Set 3
+
+
+
+# Review
+
+## Complex Impedance
+- The analysis is the same as for purely resistive but we use complex
+  voltage, current, and impedance.
+
+##
+![](./figures/load_types.jpg)
+
+## Complex Impedance Example
+- Based on REEPS2 Ex. 3.5
+
+
+## Power Factor
+- We can represent any collection linear elements as an equivalent black
+  box having a power factor
+- Expresses how much of the power is real vs reactive (out of phase)
+- $S = VI^*$
+
+## Power factor
+- S, apparent power
+- P, real power
+- Q, reactive power
+
+## Complex Power
+![](./figures/complex_power.jpg)
+
+## Complex Power
+![](./figures/complex_power_2.jpg)
+
+# Power Factor
+
+## High Voltage Capacitor
+- 100 kVAR capacitor
+- ![](./figures/100KVAR_capacitor.jpg)
+
+## Power Factor
+- Power factor close to unity gets apparent power as low as possible
+
+
+<!--
+-->
+
+
+## Impact of power factor
+- 20% of grid losses
+- 1.5% of all electricity
+
+
+## Impact on tariffs
+- Utilities can charge for power factor less than 1
+- Peak kVA charge
+
+
