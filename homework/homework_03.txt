@@ -1,0 +1,95 @@
+# ENSP 338 Homework 3
+
+Due Date:  Mon 14 Oct 2013
+
+The problem set you turn in should be both legible and the methods and
+assumptions you are using must be clear.  I strongly suggest that
+you use diagrams where appropriate and clearly state your assumptions.
+Typesetting of problem sets can increase the readability.  These set
+will be graded on the clarity of the method as much as the result.
+
+
+## Problem 1
+
+Your Basic Transformer
+
+A step-down transformer is connected between Phase A and neutral on a
+distribution circuit that has a nominal (phase-to-phase) voltage of 21
+kV.  The turns ratio of the transformer is 50:1.
+
+State your answers to two significant figures.
+
+a. What is the rms voltage on the secondary (customer, low-voltage)
+side of the transformer? (5 pts)
+
+b. Suppose the customer's load is 14.4 kW.  What is the current on the
+primary (high-voltage) side of the transformer? (5 pts)
+
+c. Which wires need to be thicker: those on the primary or secondary
+side? (5 pts)
+
+d. Sketch a diagram that explains how one could use the same transformer
+with a different connection to also provide 120V service. (5 pts)
+
+## Problem 2
+
+Transformer, More Realistic
+
+A transformer has 250 turns on the primary and 50 turns on the secondary
+winding.  The transformer is 96% efficient, so that 4% of the power
+entering on the primary side is converted to heat.
+
+a. If this transformer is supplying a purely resistive load of 10 kW at
+120V on the secondary side, what is the current in the primary winding?
+(10 pts)
+
+b. Explain how the answer would differ if the load still measures 10kW of
+real power, but is not purely resistive. (10 pts)
+
+## Problem 3
+
+Draw a power triangle labeling the angle, the side of the triangle
+that represents real power, the side of the triangle that represents
+apparent power and the side of the triangle that represents reactive
+power.
+
+a. Assume that a given load has reactive power that is equal to 30 kVAR
+and real power equal to 60 kW, calculate the power factor and show your
+work and the equations that you use. (5 pts)
+
+b. Calculate the apparent power associated with the values specified in
+part a. (5 pts)
+
+c. In part a. above, the reactive power is a positive number.  What type
+of load (inductive, capacitive or resistive) produces a positive
+reactive power. (5 pts)
+
+d. What type of load can be added to the load described in a. to reduce
+the reactive power? (5 pts)
+
+
+## Problem 4
+REEPS2 3.10
+
+a. (5 pts)
+
+b. (5 pts)
+
+c. (5 pts)
+
+## Problem 5
+REEPS2 3.11
+
+a. (5 pts)
+
+b. (5 pts)
+
+c. (5 pts)
+
+## Problem 6
+REEPS2 3.12 (15 pts)
+
+## Problem 7
+Please estimate the amount of time you spent on this homework. (5 pts)
+
+
