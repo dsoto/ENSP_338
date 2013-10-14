@@ -109,6 +109,8 @@ REEPS2 3.1 -- 3.4
 ### Reading
 - REEPS 2.5 -- 2.8
 
+### Power factor
+
 ### Transformers
 
 ### Problem Set 2 Due
@@ -118,29 +120,31 @@ REEPS2 3.1 -- 3.4
 
 ## 13. Mon 7 Oct 2013
 
+### Due
+- Homework 1 Makeup
+- Research project topic 2 minute presentation
+- Read REEPS2 3.8 -- 3.9
+
+### Transformers
+- Center tap
+
 ### Three phase power
-- mathematical representation
-- constant power flow
-- zero return current
-
-### Homework 1 Makeup Due
-
-### Research project topic presentation due
-- (Milestone 2)
-
-### Reading
-- REEPS2 3.8 -- 3.9
+- Mathematical representation
+- Constant power flow
+- Zero return current
 
 
 ## 14. Wed 9 Oct 2013
 
-### AC/DC conversion
+### Electrical utility system
+
 
 ## 15. Mon 14 Oct 2013
 
 ### Problem Set 3 Due
 
-### Motors
+### Three phase power
+### AC/DC conversion
 
 ## 16. Wed 16 Oct 2013
 
@@ -149,11 +153,13 @@ REEPS2 3.1 -- 3.4
 
 ## 17. Monday, 21 Oct 2013
 
-### Motor Systems
+### AC/DC conversion
 
 
 ## 18. Wednesday, 23 Oct 2013
 
+### Motors
+### Motor Systems
 ### Heat pumps
 
 
