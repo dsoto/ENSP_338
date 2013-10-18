@@ -1,0 +1,186 @@
+% Lecture 14, 9 Oct 2013
+% ENSP 338
+% Professor Daniel Soto, Sonoma State University
+
+
+## Announcements
+
+
+## Upcoming Deadlines
+- Problem Set 3 Due Monday, October 14th
+- Midterm Exam Wednesday, October 16th
+
+
+## Problem set feedback
+
+
+## Electric Power Industry
+
+
+## Generation
+- A changing magnetic field in a loop of wire causes a current to flow
+
+<!--
+get out small hand crank led generator
+-->
+
+## Steam turbines
+- Most electricity is created by using a heat source to create steam and
+  spin a turbine connected to a generator
+- Wind and hydropower do not create steam but still spin a generator
+
+## Steam turbine
+![](./figures/steam_turbine.jpg)
+
+## Grid
+- Power generated is fed to a grid
+
+## Grid
+![](./figures/grid_masters.pdf)
+
+## Grid control
+- Grid must control for voltage and frequency
+
+## Frequency control
+![](./figures/supply_demand_bathtub.pdf)
+
+## Interconnections
+![](./figures/interconnections.pdf)
+
+<!--
+## Global electricity
+- Approximately 20% of population has no access to electricity
+
+## What fraction of primary energy?
+-->
+
+<!--
+## Generation
+![](./figures/Annual_electricity_net_generation_in_the_world.svg)
+-->
+
+## Electricity prices relatively stable
+- Electricity is regulated
+- Electricity uses several sources of primary energy
+
+
+## U.S Electricity Price
+![](./figures/US_Electricity_Prices_1970-2008.PNG)
+
+## World Oil Price
+![](./figures/World_Oil_Prices_1970-2008.PNG)
+
+## Demand
+![](./figures/electricity_demand.pdf)
+
+<!--
+## Prices
+![](./figures/electricprices.gif)
+-->
+
+## Load Duration Curve
+![](./figures/load_duration_curve.pdf)
+
+## Capacity Factor
+- Related to the fraction of time that a plant produces electricity
+- Coal and nuclear, about 80% or higher
+- Renewables, about 20%
+
+## Load Duration Curve
+![](./figures/load_duration_curve_2.pdf)
+
+## Demand
+![](./figures/stacked_demand.pdf)
+
+## Efficiency
+- Do we build more plants to meet demand?
+- Can we use efficiency to avoid demand?
+
+## Screening curve example
+- How is the price of electricity determined?
+- How do we decide which plants to turn on?
+
+## What fraction of carbon emissions?
+- Electricity is responsible for 33% of United States carbon dioxide
+  emissions
+
+
+
+## Regulated monopolies
+- Monopoly franchise
+- In return for monopoly rights, business is heavily regulated
+
+## PURPA
+- Public Utility Regulatory Policies Act of 1978
+- Allowed independent power producers (IPPs) to connect to the utility
+  grid.
+- Encouraged competition
+- Guaranteed a market for new power plants
+
+## Decoupling
+- Decouples a utility companies profits from the amount of electricity
+  sold.
+
+## Electricity
+- Invisible
+- Indistinguishable
+    - Once you put power on a grid, you cannot trace its path
+- Immediate
+    - Electricity is very difficult to store
+
+## Soft and hard paths
+- Centralized electricity is a hard path
+
+
+
+
+
+## Three phase power
+
+## Three phase power
+- Power sent over three wires
+- Each wire is 120 degrees out of phase with the others
+- For balanced loads, total power transmitted is constant
+- For balanced loads, no return wire needed
+
+## Three phase example
+- For balanced loads, currents sum to zero
+
+## Three phase example
+- Total power delivered is constant
+- Allows for smoother operation of machines
+
+
+
+## High voltage distribution
+![](./figures/high_voltage_distribution.jpg)
+
+## Residential distribution
+![](./figures/residential_distribution.jpg)
+
+## Three phase currents
+![](./figures/three-phase.png)
+
+## Three phase currents
+![](./figures/three_phase_flow_1.jpg)
+
+## Three phase currents
+![](./figures/three_phase_flow_2.jpg)
+
+## Three phase generator
+![](./figures/three_phase_generator.jpg)
+
+
+
+
+
+
+
+
+
+
+## Three phase power
+- Power sent over three wires
+- Each wire is 120 degrees out of phase with the others
+- For balanced loads, total power transmitted is constant
+- For balanced loads, no return wire needed
