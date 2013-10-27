@@ -143,8 +143,8 @@ REEPS2 3.1 -- 3.4
 
 ### Problem Set 3 Due
 
-### Three phase power
-### AC/DC conversion
+### Midterm Review
+
 
 ## 16. Wed 16 Oct 2013
 
@@ -153,52 +153,68 @@ REEPS2 3.1 -- 3.4
 
 ## 17. Monday, 21 Oct 2013
 
-### AC/DC conversion
+### Due
+- One page proposals
+
+### Three phase power
+- Advantages
+- Line and phase voltages
 
 
 ## 18. Wednesday, 23 Oct 2013
 
-### Motors
-### Motor Systems
-### Heat pumps
+### AC/DC conversion
+- Diodes, transistors
+- Rectifiers
+- Inverters
 
 
 ## 19. Monday, 28 Oct 2013
 
-### Problem Set 4 Due
-
+### Motors
+- Fundamentals
+- Slip
 
 ## 20. Wednesday, 30 Oct 2013
 
-### Lighting Physics
-
+## Motors
+- Variable speed drive
 
 ## 21. Monday, 04 Nov 2013
 
-### Lighting Practice
+### Lighting Physics
+- Blackbody spectrum
+- Units of measure
+- Inverse square law
 
 
 ## 22. Wednesday, 06 Nov 2013
 
 ### Lighting Practice
+- Daylighting
+
+### Lighting Policy
+- Clean Energy Act
 
 
 ## 23. Monday, 11 Nov 2013
-
-### Problem Set 5 Due
-
-
-## 24. Wednesday, 13 Nov 2013
 
 ### Utility Grid Technology
 - Electricity Generation
 - Carbon Intensity
 
 
-## 25. Monday, 18 Nov 2013
+## 24. Wednesday, 13 Nov 2013
 
 ### Utility Grid Economics
 - Electricity pricing
+
+
+## 25. Monday, 18 Nov 2013
+
+### Water and Electricity
+- Cooling demands
+- Fish Impacts
 
 ## 26. Wednesday, 20 Nov 2013
 
@@ -211,9 +227,6 @@ REEPS2 3.1 -- 3.4
 ### Climate and Electricity
 - Carbon intensity
 
-### Water and Electricity
-- Cooling demands
-- Fish Impacts
 
 ## 27. Monday, 25 Nov 2013
 
