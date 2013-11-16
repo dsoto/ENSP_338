@@ -1,0 +1,159 @@
+\documentclass{article}
+\usepackage{color}
+\usepackage[nohead, margin=1.5in]{geometry}
+\definecolor{answer-color}{rgb}{0.1, 0.7, 0.1}
+
+% set up whether we are printing assignment or solution
+\newif\ifsolution
+\solutiontrue
+\solutionfalse
+
+% creates centered heading for sections
+\newcommand{\chead}[1]
+{\begin{center}\large\textbf{#1}\end{center}}
+
+% solution
+\newcommand{\solution}[1]
+{\ifsolution
+\vspace{10pt}
+{\color{answer-color} #1}
+\else\fi}
+
+
+\begin{document}
+
+\chead{ENSP 338 Homework 4}
+\chead{Due Date:  Tue 26 Nov 2013}
+\hrule
+\vspace{10pt}
+
+The problem set you turn in should be both legible and the methods and
+assumptions you are using must be clear.  I strongly suggest that you
+use diagrams where appropriate and clearly state your assumptions.
+Typesetting of problem sets can increase the readability.  The homework
+will be graded on how well you communicate your method as much as the
+correctness of the result.
+
+
+\section{Real World Power Bill}
+
+A customer uses 14000 kWh in a 30 day month and has a peak demand of 50 kW and an
+average power factor of 0.7 (70\%).  Assume an energy rate of \$0.12 USD/kWh, a
+demand rate of \$30 USD/kW, and a power factor adjustment rate of
+\$0.00005 USD/kWh/\%.
+
+\paragraph{a.} What is the energy charge for this month? (5 pts)
+
+\solution{Energy charges are based on the electrical energy consumed
+over the billing time period.
+$$14000 kWh \cdot 0.12 USD/kWh = 1680 USD $$}
+
+\paragraph{b.} What is the demand charge for this month? (5 pts)
+
+\solution{Demand charges are based on the highest or peak level of power
+consumption over the billing period.
+$$ 50 kW peak \cdot 30 USD/kW peak = 1500 USD$$
+}
+
+\paragraph{c.} What is the power factor correction charge? (5 pts)
+
+
+\paragraph{d.} What is the customer's average power? (5 pts)
+
+
+\section{Motor Problem}
+
+A single-phase 120V, 2 hp motor operates at a power factor of 0.70 and
+an efficiency of 82\% at full load.  It operates for a duty cycle of 12
+hours in every 24-hour period.  The price of electricity is \$0.15/kWh.
+
+\paragraph{a.} What is this motor's annual operating cost (ignoring maintenance)?
+(5 pts)
+
+\paragraph{b.} What would be the savings due to an efficiency increase from 82 to
+87\%? (5 pts)
+
+\paragraph{c.} What is the current drawn by this motor at full load? (5 pts)
+
+\paragraph{d.} Discuss the financial savings to the owner of increasing the power
+factor from 0.7 to 0.8, while leaving real power unchanged. (5 pts)
+
+\newpage
+\section{Your Basic Transformer}
+
+A step-down transformer is connected between Phase A and neutral on a
+three-phase distribution circuit that has a nominal (phase-to-phase)
+voltage of 21 kV.  The turns ratio of the transformer is 50:1.
+
+\paragraph{a.} What is the rms voltage on the secondary (customer, low-voltage)
+side of the transformer? (5 pts)
+
+\paragraph{b.} Suppose the customer's load is 14.4 kW.  What is the current on the
+primary (high-voltage) side of the transformer? (5 pts)
+
+\paragraph{c.} Which wires need to be thicker: those on the primary or secondary
+side? (5 pts)
+
+\paragraph{d.} Sketch a diagram that explains how one could use the same transformer
+with a different connection to also provide 120V service. (5 pts)
+
+
+\section{Color rendering}
+
+Explain in your own words why colors illuminated by a fluorescent light
+look different than in mid-day sunshine. (10 pts)
+
+\solution{Our perception of the color of an object is based on the
+relative powers of the different wavelengths of visible radiation
+reflected by the object.  If the mixture of wavelengths illuminating the
+object are different, the reflected spectrum, and thus the perceived
+color of the object will be different.}
+
+\section{Lamp Light}
+
+A lamp produces an illuminance of 60 lux on a desk 2 meters below.
+
+\paragraph{a.} If this lamp has a even illumination over all angles, what will the
+illuminance be at 4 meters away? (3 pts)
+
+\solution{By the inverse square law, the illumanance will decrease by a
+factor of 4 and be 15 lux.}
+
+\paragraph{b.} What is that illuminance in foot-candles on the desk surface? (2
+pts)
+
+\paragraph{c.} What is the total luminous flux in lumens from this lamp, assuming it
+is an ideal light bulb radiating equally in every direction? (3 pts)
+
+\paragraph{d.} What is the luminous intensity of the source in candela? (2 pts)
+
+\paragraph{e.} If the upper hemisphere of the lighting fixture reflects light
+downward so that the entire luminous flux is radiated over only half a
+sphere, but the lumens are held constant, what is the luminous intensity
+in candela now? (3 pts)
+
+\paragraph{f.} How would this change if we were using a flashlight? (2 pts)
+
+
+\section{Lighting Costs}
+
+A kerosene lantern produces 40 lumens while consuming 30 ml of kerosene
+per hour.  An LED lightbulb outputs 900 lumens while consuming 10 watts
+of electrical power.
+
+\paragraph{a.} Assume kerosene costs 1 USD/liter.  Considering only the fuel cost,
+what is the cost per lumen-hour for the kerosene lantern? (5 pts)
+
+\paragraph{b.} Assuming electricity costs 0.13 USD/kWh, what is the cost per
+lumen-hour for the LED lightbulb? (5 pts)
+
+\paragraph{c.} What do you find noticeable about this result? (5 pts)
+
+%- mills, offgrid-lighting.pdf
+%- efficacy of around 500 lumen-hours per liter
+
+\section{Time Spent}
+
+Please estimate the amount of time you spent on this homework. (5 pts)
+
+\end{document}
