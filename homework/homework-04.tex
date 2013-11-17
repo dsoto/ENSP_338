@@ -1,0 +1,243 @@
+\documentclass{article}
+\usepackage{color}
+\usepackage[nohead, margin=1.5in]{geometry}
+\definecolor{answer-color}{rgb}{0.1, 0.7, 0.1}
+
+% set up whether we are printing assignment or solution
+\newif\ifsolution
+\solutiontrue
+\solutionfalse
+
+% creates centered heading for sections
+\newcommand{\chead}[1]
+{\begin{center}\large\textbf{#1}\end{center}}
+
+% solution
+\newcommand{\solution}[1]
+{\ifsolution
+\vspace{10pt}
+{\color{answer-color} #1}
+\else\fi}
+
+
+\begin{document}
+
+\chead{ENSP 338 Homework 4}
+\chead{Due Date:  Tue 26 Nov 2013}
+\hrule
+\vspace{10pt}
+
+The problem set you turn in should be both legible and the methods and
+assumptions you are using must be clear.  I strongly suggest that you
+use diagrams where appropriate and clearly state your assumptions.
+Typesetting of problem sets can increase the readability.  The homework
+will be graded on how well you communicate your method as much as the
+correctness of the result.
+
+
+\section{Power Bill}
+
+A customer uses 14000 kWh in a 30 day month and has a peak demand of 50 kW and an
+average power factor of 0.7 (70\%).  Assume an energy rate of \$0.12 USD/kWh, a
+demand rate of \$30 USD/kW, and a power factor adjustment rate of
+\$0.00005 USD/kWh/\%.
+
+\paragraph{a.} What is the energy charge for this month? (5 pts)
+
+\solution{Energy charges are based on the electrical energy consumed
+over the billing time period.
+$$14000 kWh \cdot 0.12 USD/kWh = 1680 USD $$}
+
+\paragraph{b.} What is the demand charge for this month? (5 pts)
+
+\solution{Demand charges are based on the highest or peak level of power
+consumption over the billing period.
+$$ 50 kW peak \cdot 30 USD/kW peak = 1500 USD$$
+}
+
+%\paragraph{c.} What is the power factor correction charge? (5 pts)
+
+
+\paragraph{c.} What is the customer's average power? (5 pts)
+
+\solution{The total energy for the month should equal the average power
+multiplied by the total time in one month, since energy equals power
+multiplied by time.
+$$ P_{avg} = \textrm{average power} = \frac{14000 kWh}{30 days\cdot 24
+hr/day} $$
+}
+
+\newcommand{\ufrac}[2]{\frac{\textrm{#1}}{\textrm{#2}}}
+\section{Motor Problem}
+
+A single-phase 120V, 2 hp motor operates at a power factor of 0.70 and
+an efficiency of 82\% at full load.  It operates for a duty cycle of 12
+hours in every 24-hour period.  The price of electricity is \$0.15/kWh.
+
+\paragraph{a.} What is this motor's annual operating cost (ignoring maintenance)?
+(5 pts)
+
+\solution{
+To begin, we estimate the electricity use over one year.  We then
+multiply by the unit cost of electricity.
+We calculate the electrical power for the motor from the delivered
+mechanical power (2hp) and the efficiency.
+$$ P = 2hp\cdot \ufrac{746W}{1hp} \ufrac{1 unit electrical power}{0.82
+units mechanical power} = 1820 W$$
+We then calculate the energy over the year.
+$$ 1820W \cdot 365 days \cdot \ufrac{12 hours}{day} = 7969 kWh$$
+Finally, the price paid for the electricity
+$$7969 kWh \cdot 0.15 USD/kWh = 1195 \textrm{USD per year}$$
+}
+
+\paragraph{b.} What would be the savings due to an efficiency increase from 82 to
+87\%? (5 pts)
+
+\solution{
+To find the cost for an 87\% efficient motore, we could repeat the
+calculation above, or we could equivalently multiply by the ratio in
+efficiencies.
+$$ \$1195 \cdot \frac{0.82}{0.87} = \$1127 $$
+The difference between these two figures is 68 USD per year.
+}
+
+\paragraph{c.} What is the current drawn by this motor at full load? (5 pts)
+
+\solution{
+The RMS current in the wire will be given by dividing the apparent power
+by the voltage.  We find the apparent power by dividing the real power
+by the power factor.
+$$ S = \textrm{apparent power} = 1820 W \cdot \frac{1}{0.7} = 2.6 kVA $$
+$$ I = S/V = 2600 VA / 120 = 21.7 A$$
+If we had used the real power, we would have underestimated the current
+in the wiring.
+}
+
+\paragraph{d.} Discuss the financial savings to the owner of increasing the power
+factor from 0.7 to 0.8, while leaving real power unchanged. (5 pts)
+
+\solution{
+An improvement in the power factor (for equal real power) would decrease
+the consumption of reactive power and current.  This would have the
+benefits of lowering the current in the distribution, lowering line
+losses.  It could also avoid charges from the utility for poor power
+factor or for the delivery of reactive power.
+}
+
+
+\section{Color rendering}
+
+Explain in your own words why colors illuminated by a fluorescent light
+look different than in mid-day sunshine. (10 pts)
+
+\solution{Our perception of the color of an object is based on the
+relative powers of the different wavelengths of visible radiation
+reflected by the object.  If the mixture of wavelengths illuminating the
+object are different, the reflected spectrum, and thus the perceived
+color of the object will be different.}
+
+\section{Lamp Light}
+
+A lamp produces an illuminance of 60 lux on a desk 2 meters below.
+
+\paragraph{a.} If this lamp has a even illumination over all angles, what will the
+illuminance be at 4 meters away? (3 pts)
+
+\solution{
+By the inverse square law, since the distance increases by a factor of
+two the illumanance will decrease by a factor of 4 and be 15 lux.
+}
+
+\paragraph{b.} What is that illuminance in foot-candles on the desk surface? (2
+pts)
+
+\solution{
+Both lux and foot-candles are units of luminous flux per unit area, so
+we can convert between them with a unit conversion.
+$$ 60 lux \cdot \ufrac{1 fc}{10.76 lux} = 5.58 fc$$
+}
+
+\paragraph{c.} What is the total luminous flux in lumens from this lamp, assuming it
+is an ideal light bulb radiating equally in every direction? (3 pts)
+
+\solution{
+Based on the assumption of uniform illumination at all angles, we
+estimate that the total luminous flux is equal to the illuminance
+multiplied by the area of the sphere with a radius of 2 meters.
+$$ 60 lux \cdot 4 \pi r^2 $$
+$$ 60 lux \cdot 4 \cdot 3.14 \cdot 4m^2 = 3014 lumens $$
+This is equivalent to two 100 watt incandescent lightbulbs.
+}
+
+\paragraph{d.} What is the luminous intensity of the source in candela? (2 pts)
+
+\solution{
+Recall that luminous intensity is the lumens per solid angle and that
+there are 4$\pi$ or about 12 steradians in sphere.  To get the luminous
+intensity we divide the lumens by the solid angle.
+$$ 3014 / (4 * 3.14) = 240 candela$$
+}
+
+\paragraph{e.} If the upper hemisphere of the lighting fixture reflects light
+downward so that the entire luminous flux is radiated evenly over only half a
+sphere, but the lumens are held constant, what is the luminous intensity
+in candela now? (3 pts)
+
+\solution{
+Our fixture reduces the solid angle in which light radiates from the
+entire sphere to half a sphere.  This means that the solid angle reduces
+from 4$\pi$ to 2$\pi$ steradians or from about 12 to about 6 steradians.
+The luminous intensity increases by a factor of 2 to 480 candelas.
+}
+
+
+\section{Lighting Costs}
+
+A kerosene lantern produces 40 lumens while consuming 30 milliliters
+(ml) of kerosene
+per hour.  An LED lightbulb outputs 900 lumens while consuming 10 watts
+of electrical power.
+
+\paragraph{a.} Assume kerosene costs 1 USD/liter.  Considering only the fuel cost,
+what is the cost per kilolumen-hour (klhr) for the kerosene lantern? (5 pts)
+
+\solution{
+The light output, lumens, and the fuel use are both rates.  We need to
+multiply these by a unit of time to get the unit of light energy,
+kilolumen-hours.  This should be reminiscent of multiplying the power by
+time to get energy.
+$$ \ufrac{30 ml/hour}{40 lumens} \cdot
+   \ufrac{hour}{hour}
+   = 0.75 \ufrac{ml}{lumen-hour}$$
+$$ \ufrac{0.75 ml}{lumen-hour} \cdot
+\ufrac{1000 lumen-hour}{klhr} \cdot
+\ufrac{1 USD}{1000 ml} = 0.75 USD/klhr$$
+}
+
+\paragraph{b.} Assuming electricity costs 0.13 USD/kWh, what is the cost per
+kilolumen-hour for the LED lightbulb? (5 pts)
+
+\solution{
+$$ \ufrac{10 watts}{900 lumens} \cdot
+   \ufrac{hour}{hour} \cdot
+   \ufrac{1 kWh}{1000 Wh} \cdot
+   \ufrac{0.13 USD}{kWh} \cdot
+   \ufrac{1000 lumen-hour}{klhr}
+   = 0.0014 USD/klhr$$
+}
+\paragraph{c.} What do you find noticeable about this result? (5 pts)
+
+\solution{
+We see that per unit of light, kerosene light is over 500 times more
+expensive (based on the fuel cost) than the electricity used to power an
+LED lightbulb.
+}
+
+%- mills, offgrid-lighting.pdf
+%- efficacy of around 500 lumen-hours per liter
+
+\section{Time Spent}
+
+Please estimate the amount of time you spent on this homework. (5 pts)
+
+\end{document}
