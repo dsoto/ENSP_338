@@ -1,0 +1,85 @@
+% Lecture 16, 21 Oct 2013
+% ENSP 338
+% Professor Daniel Soto, Sonoma State University
+
+
+## Announcements
+- Today 4pm Darwin 103, Solar Fuels, Dr. Ager
+- Today 4pm Cooperage, Gender Bias, Dr. Rosser
+
+
+## Upcoming Deadlines
+- One page proposals due today
+
+
+# Three phase power
+
+## Three phase power
+- Power sent over three wires
+- Each wire is 120 degrees out of phase with the others
+- For balanced loads, total power transmitted is constant
+- For balanced loads, no return wire needed
+
+## Three phase example
+- For balanced loads, currents sum to zero
+
+## Three phase example
+- Total power delivered is constant
+- Allows for smoother operation of machines
+
+
+
+## High voltage distribution
+![](./figures/high_voltage_distribution.jpg)
+
+## Residential distribution
+![](./figures/residential_distribution.jpg)
+
+## Three phase currents
+![](./figures/three-phase.png)
+
+## Three phase currents
+![](./figures/three_phase_flow_1.jpg)
+
+## Three phase currents
+![](./figures/three_phase_flow_2.jpg)
+
+## Three phase generator
+![](./figures/three_phase_generator.jpg)
+
+## Three phase
+[Three phase
+GIF](http://upload.wikimedia.org/wikipedia/commons/4/48/3-phase_flow.gif)
+
+<!--
+![](./figures/3-phase_flow.gif)
+-->
+
+
+## Phase and line voltages
+
+- Phase voltages are the voltages on each wire with respect to ground
+- Line voltages are the voltages between lines
+- We can show that the relationship between the amplitudes is
+$$ V_{line} = \sqrt{3} V_{phase} $$
+
+## Three phase wiring
+![](./figures/three-phase-wiring.pdf)
+
+## Three phase wiring
+![](./figures/line-and-phase-voltages.pdf)
+$$ Vac = Va - Vc $$
+
+
+## Proposals
+- Is the question to be answered clear?
+- Is it clear why the question is important?
+
+## AC to DC conversion
+
+## Non-linear elements
+- Diodes allow one-way current flow
+- Transistors are electrically controlled switches
+
+
+

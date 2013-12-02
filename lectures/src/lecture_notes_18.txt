@@ -1,0 +1,105 @@
+% Lecture 18, 23 Oct 2013
+% ENSP 338
+% Professor Daniel Soto, Sonoma State University
+
+
+## Announcements
+- Nonprofit leadership fellow
+
+
+## Upcoming Deadlines
+
+
+## Agenda
+- AC/DC conversion
+- DC/AC conversion
+- DC/DC conversion
+- Non-linear circuit elements
+
+##
+<!--
+- vehicle charging discussion
+- supercharger 120 kW
+- what is current?
+- AC or DC
+
+- leaf battery 24 kWh
+- tesla battery 60 kWh
+- tesla motor three phase induction motor
+- variable frequency drive inverter
+-->
+
+
+
+## Proposals
+- Is the question to be answered clear?
+- Is it clear why the question is important?
+
+## AC to DC conversion
+
+## Non-linear elements
+- Diodes allow one-way current flow
+- Transistors are electrically controlled switches
+
+## Diodes
+![](./figures/reeps-diode.pdf)
+
+
+## Half-wave rectifier
+![](./figures/reeps-half-wave-rectifier.pdf)
+
+## Half-wave rectifier with capacitor
+![](./figures/reeps-half-wave-operation.pdf)
+
+## Full-wave rectifier
+![](./figures/reeps-full-wave-rectifier.pdf)
+
+## Three phase rectifiers
+![](./figures/reeps-three-phase-rectifier.pdf)
+
+
+<!--
+- demonstration with measurement of power bricks
+- what is power factor of these?
+- distortion, displacement
+-->
+
+
+## Uses
+- Electronic power supplies
+- Off-grid wind battery charging
+
+
+## Transistors
+- For our purposes, we can model these as electronically controlled
+  switches.
+
+
+## DC/DC Converters
+- Linear voltage regulators
+- Switching voltage regulators
+
+## Switching power supply
+![](./figures/reeps-switch-mode.pdf)
+
+## Energy Star Standards
+- Active mode efficiency
+- No-load efficiency
+- Power factor requirements
+
+## Inverters
+
+![](./figures/reeps_inverter.pdf)
+
+## Uses
+- Motor control
+- Solar installations
+- High Voltage DC interconnection
+
+## High Voltage DC interconnection
+- ![](./figures/reeps-hvdc-link-2.pdf)
+- Why is the DC connection necessary?
+
+<!--
+- Why are power supplies warm?
+-->

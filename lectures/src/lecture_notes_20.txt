@@ -1,0 +1,62 @@
+% Lecture 20, 30 Oct 2013
+% ENSP 338
+% Professor Daniel Soto, Sonoma State University
+
+
+## Announcements
+- Advising deadlines approaching
+
+## Upcoming Deadlines
+- No homework currently assigned
+- Research paper due Monday, December 2nd
+
+## Agenda
+- Electric motors
+- Construct simple DC motor
+- Motor effects
+
+<!--
+motor construction
+- make loop of wire
+- measure resistance of loop
+- estimate current through loop for 1.5 volt battery
+-->
+
+
+
+## Poles
+![](./figures/motor-poles-1.jpg)
+
+##
+![](./figures/motor-poles-2.jpg)
+
+##
+![](./figures/motor-poles-3.jpg)
+
+##
+![](./figures/motor-poles-4.jpg)
+
+## Slip
+![](./figures/motor-slip-1.jpg)
+
+##
+![](./figures/motor-slip-2.jpg)
+
+##
+![](./figures/paper-clip-1.jpg)
+
+##
+![](./figures/paper-clip-2.jpg)
+
+##
+![](./figures/paper-clip-3.jpg)
+
+##
+![](./figures/paper-clip-4.jpg)
+
+##
+![](./figures/paper-clip-5.jpg)
+
+
+## Back EMF
+
