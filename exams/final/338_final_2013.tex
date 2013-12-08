@@ -1,0 +1,469 @@
+\documentclass[12pt, oneside]{article}
+\usepackage{soto-exam}
+
+\solutiontrue
+\solutionfalse
+
+\begin{document}
+
+% header block
+\begin{center}
+{\bf Final Exam}\\
+{\bf ENSP 338}\\
+{\bf Electrical Energy Management}\\
+{\bf Daniel Soto}\\
+{\bf Monday 9 Dec 2013}\\
+\end{center}
+
+
+% name and signature boxes
+\makebox[1.0in][l]
+{Name:}
+\framebox[4.5in]{\rule{0cm}{1.5cm}}\\
+\vspace{0.2cm}
+
+\makebox[1.0in][l]
+{Signature:}
+\framebox[4.5in]{\rule{0cm}{1.5cm}}\\
+\vspace{0.8cm}
+
+
+% instructions to students
+\noindent
+{\bf Instructions.}
+
+\begin{itemize}
+
+\item Clearly show your work.  Box answers to make them clear.
+
+\item You are allowed until 12:50 to work on this exam.
+
+\item In order to recieve full credit, you must show your work, justify
+your answers, and use correct units.  The correct answer without any
+work will recieve little or no credit.  If you are struggling, explain
+in words how you are approaching the problem.  This makes it much easier
+to assign partial credit.
+
+\item You may not access the internet during the exam.
+
+\end{itemize}
+
+\vfill
+
+% grading and scores table
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\rule[-0.3cm]{0cm}{1cm}
+Section & Points & Score \\
+\hline
+\tablerow{1}{30}
+\tablerow{2}{20}
+\tablerow{3}{20}
+\tablerow{4}{20}
+\tablerow{5}{20}
+\tablerow{\bf{Total}}{110}
+\end{tabular}
+\end{center}
+
+\vfill
+
+\newpage
+\problem{True or False? (30 points)}
+
+2 points each.
+
+\tf{An inverter converts AC to DC electricity.}
+\solution{False}
+
+\tf{For most consumers, \$100 USD in the future is worth less than \$100 USD today.}
+\solution{True}
+
+\tf{LED lighting produces more lumens per watt than incandescent bulbs.}
+\solution{True, LED about 90 lumens per watt, incandescent about 16
+lumens per watt.}
+
+\tf{Motors usually have power factors of 1.0}
+\solution{False.  Because they have inductive windings, they usually
+have power factors below 1.0.}
+
+\tf{Reactive loads can draw a higher current than suggested by their
+real power.  That means greater than the current given by $I = P/V$.}
+\solution{True, since reactive loads have reactive power, the apparent
+power is greater than the real power.  The current is given by the
+apparent power.}
+
+\tf{According to Kirchoff’s voltage law, the sum of the voltages around
+any circuit is not zero.}
+\solution{False.  If you travel around any loop in a circuit, you will
+arrive back at the same potential.}
+
+\tf{According to Kirchoff’s current law, the sum of the current entering
+and leaving a node equals zero.}
+\solution{True.  If the total were not zero, electrons would be piling
+up or disappearing from the node.}
+
+\tf{A fluorescent lamp with a CCT of 5000K  will appear more blue
+than an incandescent bulb with a CCT of 4300K.}
+\solution{True.  A higher color temperature means a hotter blackbody
+radiator which means the spectrum shifts toward blue.}
+
+\tf{A retrofit loan with a higher interest rate will result in a higher conserved
+cost of energy than a loan with a lower interest rate.}
+\solution{True, the higher interest rate means a higher monthly payment
+which increases the cost of conserved energy.}
+
+\tf{A common household outlet is wired in series.}
+\solution{False.  Outlets are wired in parallel so that each outlet sees
+the same voltage.}
+
+\tf{Given two possible paths, more current flows in the direction with more resistance.}
+\solution{False, more current flows in the path with lower resistance.}
+
+\tf{Capacitors are often used to adjust the power factor of motors.}
+\solution{True}
+
+\tf{Utility companies hope to achieve a power factor close to 1.0.}
+\solution{True.  By having a power factor close to 1, the current
+through the equipment is no higher than necessary.}
+
+\tf{A 2 ohm resistor connected to 5 volts creates a current of 10 Amps.}
+\solution{False.  By $V = IR$, the current should be 2.5 amps.}
+
+\tf{White light is a blend of multiple parts of the visible light spectrum. }
+\solution{True.  By mixing multiple frequencies, our eyes perceive a
+white color.}
+
+%\tf{The color rendering index would give a low-pressure sodium bulb a high rating.}
+%\tf{Thicker wire has a higher resistance.}
+%\tf{The return current in a perfectly balanced 3 phase circuit is zero.}
+%\solution{True}
+
+\newpage
+\problem{Short Answer (20 points)}
+
+\begin{enumerate}
+
+\item Give two examples of a electrically conducting material and two
+examples of electrically insulating materials.
+\vfill
+\item What is the power factor of a resistor?
+\vfill
+\item Match the symbols: S, P, Q, powers: apparent power, real power,
+reactive power, and units: kW, kVA, kVAr.
+\vfill
+\item Explain how apparent power is different from real power.
+\vfill
+\item Briefly explain the purpose of transformers and where you might see one?
+\vfill
+
+\newpage
+\item List the wavelengths in order from short wavelengths to long
+wavelengths: Red light, X rays, Green light, Radio waves, Blue light.
+\vfill
+\item What is a common method for correcting the power factor of a motor?
+\vfill
+\item Explain in words what simple payback for an energy investment means.
+\vfill
+\item Which would you expect to operate at a power factor closer to 1?\\
+a. a circuit with 90\% resistive elements\\
+b. a circuit with 90\% inductive elements
+\vfill
+\item An electric motor draws 1 kW, 1.3 kVA, and produces 1 hp.  The
+motor’s efficiency is closest to \\
+a. 54\% \hfill
+b. 75\% \hfill
+c. 85\% \hfill
+d. 90\% \hfill
+e. 97.5\% \\
+\vfill
+
+%\item Describe the properties of a capacitor and explain the structure.
+%\item Describe the properties of an inductor and explain the structure.
+%\item A motor generates 0.5 hp of mechanical power while consuming 1.0 kW of
+%electrical power.  What is its efficiency?
+
+\end{enumerate}
+
+\newpage
+\problem{Vehicle Charging (20 points)}
+
+The Nissan Leaf electric car has a 24 kWh battery.
+
+\begin{enumerate}
+
+\item Draw a circuit diagram showing how current flows from the voltage
+source to the battery and back. (5 pts)
+
+\solution{}
+
+\vfill
+
+\item If the car is 10 feet away from the charging station, explain how
+many feet of copper conductor you need to supply power? (5 pts)
+
+\solution{You need 20 feet of conductor, 10 feet to deliver current to
+the car, and 10 feet to return the current to the charging station.}
+
+\vfill
+
+\item Assuming the battery is completely empty, and all delivered power is
+stored in the battery, how long will it take to
+charge the battery using a charger that can provide 4 kW? (5 pts)
+
+\solution{24 kWh / 4 kW = 6 hours}
+
+\vfill
+
+\item A charger has an AC to DC converter that converts the utility AC
+voltage to DC voltage for the battery charger.  If the DC voltage is
+480V, what is the current needed to deliver 4kW? (5 pts)
+
+\solution{4 kW / 480V = 8.3 Amps}
+
+\vfill
+
+\end{enumerate}
+
+
+\newpage
+\problem{Retrofit Economics (20 points)}
+
+A building manager has a choice on upgrading a system.  Device A
+costs 50 USD and uses 500W.  Device B costs 25 USD and uses 800W of
+power.  Electricity costs 0.20 USD per kWh.
+
+\begin{enumerate}
+
+\item What is the additional first cost of using the more efficient
+device? (5 pts)
+
+\solution{The additional first cost is the difference in the prices, 25
+USD.}
+
+\vfill
+
+\item What is the energy saved per month by using the more efficient
+device if the devices are used an average of 6 hours per day? (5 pts)
+
+\solution{The energy saved can be calculated by multiplying the
+difference in power by the time the devices would be used.
+$$ (800W - 500W) \cdot 6 hours/day \cdot 30 day/month = 54 kWh/month $$
+}
+
+
+\vfill
+
+\item Under these conditions, what is the simple payback period in
+months? (5 pts)
+
+\solution{The simple payback period is the additional first cost divided
+by the cost avoided per unit time.  We need to find the cost per month,
+10.8 USD.  We then divide the difference in first cost by the money
+saved per month.
+$$ 25 USD / 10.8 USD/month = 2.3 months$$
+This is a very rapid payback.
+}
+
+\vfill
+
+\item We can pay for the devices with a loan that has a CRF of 0.10 per
+month.  That is, the monthly payment is 10\% of the full amount.  What
+is the cost of conserved energy for the more efficient device
+
+\solution{The conserved cost of energy is the additional monthly cost
+(5 - 2.50 = 2.50 USD per month) divided by the energy saved per month
+(54 kWh per month).  2.50 / 54 = 4.6 cents per kWh.}
+
+\vfill
+
+\end{enumerate}
+
+
+\newpage
+\problem{Circuits (20 points)}
+
+A toaster and a rice cooker are plugged into the same outlet.  These can
+both be modeled as resistors.  Assume the voltage is 120V AC.
+
+\begin{enumerate}
+
+\item Are the toaster and the rice cooker connected in series or
+parallel? (5 pts)
+
+\solution{Like all loads in a household, they are connected in parallel
+so that the each receive 120 Volts AC.}
+
+\vfill
+
+\item Draw the circuit using an ideal voltage source to represent the
+120V household voltage. (5 pts)
+
+\vspace{2 in}
+
+\item If the toaster draws 800W and the rice cooker draws 300W what is
+the resistance for each? (5 pts)
+
+\solution{We can calculate the resistance using $R = V^2/P$.  For the
+toaster
+$$ R = 120^2 / 800 = 18 ohms$$
+For the rice cooker
+$$ R = 120^2 / 300 = 48 ohms$$
+}
+
+\vfill
+
+\item What current flows to the outlet to supply both loads? (5 pts)
+
+\solution{The key is to recognize that these two loads are in parallel.
+We can either find the current each takes and add them or we calculate
+an equivalent resistance for the two loads and use Ohm's Law.  I will do
+the latter.
+$$ R_{eq} = 1 / (1/18 ohms + 1 / 48 ohms) = 13.1 ohms$$
+$$ I = V / R = 120 Volts / 13.1 ohms = 9.2 amps$$}
+
+\vfill
+
+
+\end{enumerate}
+
+
+
+\end{document}
+
+\newpage
+\problem{Power Triangle}
+If a single phase 480-V supply delivers 50 A with a power factor
+of 0.8, find the real power (kW), the reactive power (kVAR) , and the
+apparent power (kVA).  Draw the power triangle associated with these
+values.
+
+How much current flows through the lines to power the load?
+
+If we can add a capacitor to improve the power factor to 0.9, (while
+leaving the real power the same) what will the current in the lines be?
+
+Show your work in the space provided or on the last page where there is
+extra space.  Points will be given for your method and your answer.
+Please ensure that you have all 7 pages.
+
+Reference Information: (might be useful)
+	1 Btu = 1055 J
+1 kg = 2.2 lb
+1 kW = 3413 Btu/hr
+1 kWh = 3.60 x 106 J = 3413 Btu
+1 cal = 4.18 J
+1 therm = 105 Btu
+1 ton of cooling = 12,000 Btu/hr
+		The specific heat capacity of water in various units:
+1 Btu/lb-oF, 1 cal/gram-oC, 4.18 kJ/kg-oC
+
+1hp = 0.746 kW
+
+
+
+Each of the store’s 800 old interior lighting fixtures will be
+retrofitted with new lamps and ballasts as part of this project.  Each
+of the 800 old fixtures consumed 120 Watts and is being replaced by a
+new fixture that consumes 58 Watts.  The lights are on for 4000 hours
+per year and the average cost of electricity is \$0.13/kWh.
+
+a.	Calculate the peak demand savings in kW associated with this retrofit.
+b.	Calculate the annual energy savings in kWh associated with this retrofit.
+c.	Calculate the annual financial savings in \$/year associated with this retrofit.
+d.	Assuming that the cost of the lighting retrofit is \$60,000, what is the simple payback?
+e.	Name one non-electrical improvement that can be made to the ceiling
+to increase the illuminance levels on the sales floor of the store.
+f.	Assume that the owner is contemplating various retrofit options that
+have paybacks of six months to two years.  Does it make sense to carry
+out a net present value calculation to help the owner determine when the
+investment will pay for itself (  YES                 or
+NO   ) circle one.
+Why or why not?
+
+/ 6	2.  A 52-gallon electric water heater is designed to deliver 4800
+watts to an electric-resistance heating element in the tank when it is
+supplied with 240V (it doesn’t matter if this is ac or dc).
+
+a.	What is the resistance of the heating element?
+b.	How many watts would be delivered if the element is supplied with 208V instead of 240V?
+c.  Neglecting any losses from the tank, and assuming a 100\% efficient
+conversion of electricity to heat,  how long would it take for 4800
+watts to heat the 52 gallons of water from 60 oF to 120oF?   (Note:  one
+Btu heats 1 lb of water by 1oF and 1 gallon of water weighs 8.34 lbs.)
+
+/7	3.  Given the circuit diagram to the right, answer the following questions:
+a.	 Calculate the equivalent resistance of the 5Ώ, 10Ώ and 20Ώ resistors.
+b.	What is the total resistance seen by the battery in the circuit above?
+c.	What is the total current produced by the battery in the circuit above?
+d.	T    	  F	The voltage between points b and g is equal to the voltage between points a and h.
+
+
+/ 3	5.  A single conductor in a transmission line is known to dissipate
+6,000 kWh of energy over a 24-hour period during which time the current
+in the conductor was 100 amps.  What is the resistance of the conductor?
+
+How do utilities reduce transmission losses when moving large amounts of
+power over long distances?
+
+/8	6.  For this problem use the diagram below that represents a string
+of 100 small lights of the sort that you see inside many houses in
+December.  The bulbs are connected to each other in series.
+
+a.	The voltage across the string of lights is 120V.  What is the voltage drop across each individual bulb?
+b.	If each bulb draws 2W, what is its resistance?
+c.	What is the current through each bulb?  Through the entire string?
+The string’s original incandescent  bulbs are replaced with 100 LED bulbs of equal luminous intensity.  Based on what you know about LED lighting fill in the following:
+d.	T      F	The voltage across each LED bulb is less than the voltage across each incandescent bulb
+e.	T      F	The current through each LED bulb is less than the current through each incandescent bulb
+
+/4	7.  Cite two benefits that result from the electrical grid using high voltage alternating current as promoted by Nikola Tesla as opposed to the grid using lower voltage direct current as proposed by Thomas Edison.   (1 pt clarity, 1 pt key word)
+	(1)
+	(2)
+
+/6	8.  A transformer rated at 1000 kVA is operating near capacity as it supplies a load that draws 900 kVA with a power factor of 0.70.
+a.	How many kW of real power is being delivered to the load?
+b.	How much additional load (in kW of real power) can be added before the transformer reaches its full rated kVA  (assume the power factor remains 0.70).
+
+c.	How much additional power (above the amount in a) can the load draw from this transformer without exceeding its 1000 kVA rating if the power factor is corrected to 1.0?
+
+/6	9.  A transformer has 800 turns on the primary and 200 turns on the secondary winding. The primary voltage is 10 kV, and the power transferred is 20 kW. Ignore losses.
+
+The voltage on the secondary winding is
+The current on the primary winding is
+The current on the secondary winding is
+
+The questions in the remainder of the exam are worth one point each.
+
+Assuming a constant supply voltage, the power dissipated by an extension cord depends on
+a. the cord’s resistance 		b. the load’s resistance		c. both a. and b.
+
+Which of the following is NOT a unit of power?
+a. kW/hr 		b. kWh/hr		c. Joules/sec 	d. kW	e. horsepower	f. Btu/hr
+
+The maximum value of an alternating voltage is ±200V a.c. What is the rms value?
+a. 0V 		b. 100V 		c. 142V 		d. 200V 		e. 282V		f. 400V
+
+
+
+What crucial condition allows the neutral conductor in 3-phase distribution to carry zero current  (assuming the generator supplies equal voltage to each phase)?
+
+
+Which of the following motors would you expect to operate more efficiently? (circle A or B for each pair)
+A. a single-phase motor				or	B. a three-phase motor
+A. a motor operating near 100\% load		or	B. a motor operating near 25\% load
+A. a 1 hp motor					or 	B.  a 100 hp motor
+
+Which would you expect to operate at a power factor closer to 1?
+A. a circuit with 90\% resistive elements		or	B. a circuit with 90\% inductive elements
+A. a motor operating near 100\% load		or	B. a motor operating near 25\% load
+
+
+At 1 hp, a fan motor draws 1 kW. Operating at 0.4 hp, this fan would most likely draw closest to
+a. 0.25 kW		b. 0.4 kW		c. 0.5 kW 		d.  1 kW
+
+An induction motor’s rotor current is greatest      a. at the start       b. at full load       c. at synchronous speed
+
+A 25W compact fluorescent lamp should  a lumen output most similar to which incandescent lamp?
+a. 10 W		b. 25 W		c. 50 W 		d. 100 W	e. 200 W
+
