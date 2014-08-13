@@ -57,6 +57,16 @@ uses during class time is strongly discouraged.
 
 ## Course Schedule
 
+We will begin with the basics of electrical theory and investment
+theory, giving us a foundation for estimating circuit behavior and the
+financial costs of technologies.  We will then cover practical aspects
+of utilities and the way we sell electricity.  We'll next cover AC
+and three-phase electricity and safety.  We cover the main loads that
+electricity power which are lighting and motors.  We will cover both
+theory and practical aspects of each of these.  The course will end with
+optional topics that will include smart grid technology and climate
+impacts of electricity.
+
 {{ d['course-schedule.md'] }}
 
 ## Readings
@@ -64,7 +74,7 @@ uses during class time is strongly discouraged.
 The required text for this course is:
 
 Gil Masters, *Renewable and Efficient Electric Power Systems*, 2nd
-Edition.  Available at the Campus Bookstore and at Northlight Books.
+Edition.  Available at Northlight Books.
 There is also an online version of the text available on the Sonoma
 Library website.
 
@@ -98,7 +108,6 @@ After grading, you may submit a self-evaluation that considers how your
 approach differs from the accepted approach.  Self-evaluations that
 demonstrate an improvement in your understanding will raise your
 homework grade through partial credit.
-
 
 Here is the tentative homework schedule.
 

@@ -60,31 +60,31 @@ uses during class time is strongly discouraged.
 |   Lecture | Date            | Topic                      |
 |----------:|:----------------|:---------------------------|
 |         1 | Wed 20 Aug 2014 | Introduction               |
-|         2 | Mon 25 Aug 2014 | History of electricity     |
-|         3 | Wed 27 Aug 2014 | Electricity Physics        |
-|         4 | Wed 03 Sep 2014 | Ohms Law                   |
+|         2 | Mon 25 Aug 2014 | Electricity Physics        |
+|         3 | Wed 27 Aug 2014 | Ohms Law                   |
+|         4 | Wed 03 Sep 2014 | Kirchoff's Laws            |
 |         5 | Mon 08 Sep 2014 | Time Value of Money        |
 |         6 | Wed 10 Sep 2014 | NPV IRR                    |
 |         7 | Mon 15 Sep 2014 | Loads                      |
 |         8 | Wed 17 Sep 2014 | Tariffs                    |
-|         9 | Mon 22 Sep 2014 | Alternating Current        |
-|        10 | Wed 24 Sep 2014 | Inductance and Capacitance |
-|        11 | Mon 29 Sep 2014 | Real and Reactive Power    |
-|        12 | Wed 01 Oct 2014 | Three Phase Power          |
-|        13 | Mon 06 Oct 2014 |                            |
-|        14 | Wed 08 Oct 2014 |                            |
+|         9 | Mon 22 Sep 2014 | Conserved cost of energy   |
+|        10 | Wed 24 Sep 2014 | Alternating Current Theory |
+|        11 | Mon 29 Sep 2014 | Wiring and Safety          |
+|        12 | Wed 01 Oct 2014 | Inductance and Capacitance |
+|        13 | Mon 06 Oct 2014 | Real and Reactive Power    |
+|        14 | Wed 08 Oct 2014 | Power factor               |
 |        15 | Mon 13 Oct 2014 | GHTC Conference            |
-|        16 | Wed 15 Oct 2014 | Demand response            |
-|        17 | Mon 20 Oct 2014 |                            |
-|        18 | Wed 22 Oct 2014 | Lighting Physics           |
-|        19 | Mon 27 Oct 2014 | Lighting Practice          |
-|        20 | Wed 29 Oct 2014 | Electromagnetic Physics    |
-|        21 | Mon 03 Nov 2014 | Electric Machines          |
-|        22 | Wed 05 Nov 2014 | Transformers               |
-|        23 | Mon 10 Nov 2014 | Motors                     |
-|        24 | Wed 12 Nov 2014 | Motor Systems              |
-|        25 | Mon 17 Nov 2014 | Efficiency Economics       |
-|        26 | Wed 19 Nov 2014 | Efficiency Policy          |
+|        16 | Wed 15 Oct 2014 | Three Phase Power          |
+|        17 | Mon 20 Oct 2014 | Lighting Physics           |
+|        18 | Wed 22 Oct 2014 | Lighting Practice          |
+|        19 | Mon 27 Oct 2014 | Electromagnetic Physics    |
+|        20 | Wed 29 Oct 2014 | Transformers               |
+|        21 | Mon 03 Nov 2014 | Motors                     |
+|        22 | Wed 05 Nov 2014 | Motor Systems              |
+|        23 | Mon 10 Nov 2014 | Utility Grid Technology    |
+|        24 | Wed 12 Nov 2014 | Carbon intensity           |
+|        25 | Mon 17 Nov 2014 | Optional Topics            |
+|        26 | Wed 19 Nov 2014 | Optional Topics            |
 |        27 | Mon 24 Nov 2014 | Presentations              |
 |        28 | Mon 01 Dec 2014 | Presentations              |
 |        29 | Wed 03 Dec 2014 | Wrapup                     |
@@ -106,12 +106,16 @@ Here is the tentative reading schedule
 
 | Date            | Reading                |
 |:----------------|:-----------------------|
-| Wed 03 Sep 2014 | REEPS 2.1ish           |
+| Mon 25 Aug 2014 | REEPS 2.1-2.2          |
+| Wed 27 Aug 2014 | REEPS 2.3-2.4          |
 | Mon 08 Sep 2014 | Luenberger             |
-| Mon 22 Sep 2014 | REEPS 2ish             |
+| Wed 24 Sep 2014 | REEPS 3.1-3.2          |
+| Mon 29 Sep 2014 | REEPS 2.4-2.8          |
+| Mon 06 Oct 2014 | REEPS 3.3              |
 | Mon 27 Oct 2014 | REEPS2 Appendix A      |
 | Mon 03 Nov 2014 | REEPS2 Chapter 3       |
-| Mon 10 Nov 2014 | ACEEE?                 |
+| Wed 05 Nov 2014 | ACEEE reading?         |
+| Mon 10 Nov 2014 | REEPS 1                |
 | Wed 19 Nov 2014 | article and discussion |
 
 ## Project Schedule
@@ -122,12 +126,10 @@ Here is the tentative project schedule.
 |:----------------|:---------------------|
 | Mon 25 Aug 2014 | Brainstorm 3 topics  |
 | Mon 08 Sep 2014 | Topic and Timeline   |
-| Wed 17 Sep 2014 | Project proposal     |
-| Mon 29 Sep 2014 | Proposal Feedback    |
-| Wed 08 Oct 2014 | Outline              |
-| Mon 20 Oct 2014 | Outline Feedback     |
-| Wed 29 Oct 2014 | First draft          |
-| Mon 10 Nov 2014 | First draft feedback |
+| Wed 17 Sep 2014 | Outline              |
+| Wed 01 Oct 2014 | Outline Feedback     |
+| Wed 22 Oct 2014 | First draft          |
+| Mon 03 Nov 2014 | First draft feedback |
 | Wed 19 Nov 2014 | Final Report         |
 
 ## Homework
@@ -150,13 +152,13 @@ homework grade through partial credit.
 
 Here is the tentative homework schedule.
 
-| Date            | Homework   |
-|:----------------|:-----------|
-| Mon 25 Aug 2014 | Homework 0 |
-| Mon 15 Sep 2014 | Homework 1 |
-| Wed 24 Sep 2014 | Homework 2 |
-| Mon 13 Oct 2014 | Homework 3 |
-| Mon 27 Oct 2014 | Homework 4 |
+| Date            | Homework       |
+|:----------------|:---------------|
+| Mon 25 Aug 2014 | Homework 0     |
+| Wed 10 Sep 2014 | Homework 1 Due |
+| Mon 29 Sep 2014 | Homework 2 Due |
+| Mon 20 Oct 2014 | Homework 3 Due |
+| Mon 10 Nov 2014 | Homework 4 Due |
 
 ## Classroom Work
 
