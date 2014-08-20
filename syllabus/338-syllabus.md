@@ -1,9 +1,10 @@
 # Electrical Energy Management, ENSP 338, Fall 2014
 
+
 |           |                                       |
 |-----------|---------------------------------------|
-|Days       | Tuesday and Thursday                  |
-|Time       | 10:00 - 11:50 am                      |
+|Days       | Monday and Wednesday                  |
+|Time       | 2:00 - 3:50 pm                        |
 |Units      | 4                                     |
 |Location   | Environmental Technology Center (ETC) |
 |Instructor | Daniel Soto                           |
@@ -35,13 +36,12 @@ presentation that integrates what they have learned in the class.
 
 ## Grading
 - Classroom work (quizzes, participation) 25%
-- Homework 25%
-- Midterm 20%
-- Research project 10%
-- Final exam 20%
-
+- Homework (problem sets, readings) 25%
+- Exams (midterm, final) 25%
+- Research project 25%
 
 ## Agreements
+
 - Respectful tone in classroom
 
 Civility is required from all students during discussions and
@@ -54,8 +54,24 @@ Internet-connected electronic devices (phones, tablets) may be used in
 class for learning purposes.  Using devices for social networks or other
 uses during class time is strongly discouraged.
 
+- Willingness to take risks and experiment
+
+I frequently try new approaches to teaching and learning.  These are
+always with the intention of making this class as beneficial to you as
+possible.
+
 
 ## Course Schedule
+
+We will begin with the basics of electrical theory and investment
+theory, giving us a foundation for estimating circuit behavior and the
+financial costs of technologies.  We will then cover practical aspects
+of utilities and the way we sell electricity.  We'll next cover AC
+and three-phase electricity and safety.  We cover the main loads that
+electricity power which are lighting and motors.  We will cover both
+theory and practical aspects of each of these.  The course will end with
+optional topics that will include smart grid technology and climate
+impacts of electricity.
 
 |   Lecture | Date            | Topic                      |
 |----------:|:----------------|:---------------------------|
@@ -94,7 +110,7 @@ uses during class time is strongly discouraged.
 The required text for this course is:
 
 Gil Masters, *Renewable and Efficient Electric Power Systems*, 2nd
-Edition.  Available at the Campus Bookstore and at Northlight Books.
+Edition.  Available at Northlight Books.
 There is also an online version of the text available on the Sonoma
 Library website.
 
@@ -104,31 +120,38 @@ readings and will be included in your homework grading average.
 
 Here is the tentative reading schedule
 
-| Date            | Reading                |
-|:----------------|:-----------------------|
-| Mon 25 Aug 2014 | REEPS 2.1-2.2          |
-| Wed 27 Aug 2014 | REEPS 2.3-2.4          |
-| Mon 08 Sep 2014 | Luenberger             |
-| Wed 24 Sep 2014 | REEPS 3.1-3.2          |
-| Mon 29 Sep 2014 | REEPS 2.4-2.8          |
-| Mon 06 Oct 2014 | REEPS 3.3              |
-| Mon 27 Oct 2014 | REEPS2 Appendix A      |
-| Mon 03 Nov 2014 | REEPS2 Chapter 3       |
-| Wed 05 Nov 2014 | ACEEE reading?         |
-| Mon 10 Nov 2014 | REEPS 1                |
-| Wed 19 Nov 2014 | article and discussion |
+| Date            | Reading           |
+|:----------------|:------------------|
+| Mon 25 Aug 2014 | REEPS 2.1-2.2     |
+| Wed 27 Aug 2014 | REEPS 2.3-2.4     |
+| Mon 08 Sep 2014 | Luenberger        |
+| Wed 24 Sep 2014 | REEPS 3.1-3.2     |
+| Mon 29 Sep 2014 | REEPS 2.4-2.8     |
+| Mon 06 Oct 2014 | REEPS 3.3         |
+| Mon 27 Oct 2014 | REEPS2 Appendix A |
+| Mon 03 Nov 2014 | REEPS2 Chapter 3  |
+| Wed 05 Nov 2014 | ACEEE reading?    |
+| Mon 10 Nov 2014 | REEPS 1           |
 
 ## Project Schedule
 
-Here is the tentative project schedule.
+You will investigate a project in teams.
+You will choose a question related to electrical energy
+and then use techniques from this class to create estimates.
+The learning goals are for you to explore relevant topics in electrical
+energy use in ways similar to professional work.
+There will be a separate document that explains the expectations for the
+project that I will hand out in a few weeks.
+
+The tentative project schedule is listed here:
 
 | Date            | Project              |
 |:----------------|:---------------------|
-| Mon 25 Aug 2014 | Brainstorm 3 topics  |
-| Mon 08 Sep 2014 | Topic and Timeline   |
-| Wed 17 Sep 2014 | Outline              |
-| Wed 01 Oct 2014 | Outline Feedback     |
-| Wed 22 Oct 2014 | First draft          |
+| Wed 27 Aug 2014 | Brainstorm 3 topics  |
+| Wed 17 Sep 2014 | Choose topic         |
+| Mon 29 Sep 2014 | Outline              |
+| Mon 06 Oct 2014 | Outline Feedback     |
+| Mon 27 Oct 2014 | First draft          |
 | Mon 03 Nov 2014 | First draft feedback |
 | Wed 19 Nov 2014 | Final Report         |
 
@@ -138,39 +161,35 @@ You will be graded both on the
 validity of your work as well as your ability to communicate your
 methods.  This means that in addition to the mathematics, you should be
 providing brief explanations of your techniques and your thought
-process.  Calculations without supporting arguments will not receive
-full credit.
+process.
 
-Homework will be graded on a coarse grading schedule of a 1, 2, or 3.  A
-3 is given for strong work that meets or exceeds the requirements, a 2
-for adequate work, and a 1 for work that doesn't meet expectations.
-After grading, you may submit a self-evaluation that considers how your
-approach differs from the accepted approach.  Self-evaluations that
-demonstrate an improvement in your understanding will raise your
-homework grade through partial credit.
+I will be experimenting with various homework assessment
+and feedback techniques throughout the semester.  Please have faith that
+these experiments have improving your learning as the main goal.
 
+The tentative homework schedule is listed here:
 
-Here is the tentative homework schedule.
-
-| Date            | Homework       |
-|:----------------|:---------------|
-| Mon 25 Aug 2014 | Homework 0     |
-| Wed 10 Sep 2014 | Homework 1 Due |
-| Mon 29 Sep 2014 | Homework 2 Due |
-| Mon 20 Oct 2014 | Homework 3 Due |
-| Mon 10 Nov 2014 | Homework 4 Due |
+| Date            | Homework   |
+|:----------------|:-----------|
+| Wed 27 Aug 2014 | Homework 0 |
+| Mon 15 Sep 2014 | Homework 1 |
+| Mon 29 Sep 2014 | Homework 2 |
+| Mon 13 Oct 2014 | Homework 3 |
+| Mon 27 Oct 2014 | Homework 4 |
+| Mon 10 Nov 2014 | Homework 5 |
 
 ## Classroom Work
 
-We will solve problems in class that I hand out.  These are graded
-credit no credit.  If you have an unexcused absence on that day, you
-will receive a no credit grade for that days work.
+We will often perform individual and group work in class.  These may
+take the form of writing exercises, group exercises, or quizzes.
+If you have
+an unexcused absence on the day of work, you will not receive credit for
+that day's assignment.
 
 ## Office Hours
+Signup is online and can be accessed
+through my website at [danielrsoto.com](http://danielrsoto.com)
 
-My office hours are held Tuesday and Wednesday in my office in Rachel
-Carson Hall 12 from 2pm until 3pm.  Signup is online and can be accessed
-through my website at http://danielrsoto.com
 
 ## University Policies
 

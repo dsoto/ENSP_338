@@ -1,9 +1,10 @@
 # Electrical Energy Management, ENSP 338, Fall 2014
 
+
 |           |                                       |
 |-----------|---------------------------------------|
-|Days       | Tuesday and Thursday                  |
-|Time       | 10:00 - 11:50 am                      |
+|Days       | Monday and Wednesday                  |
+|Time       | 2:00 - 3:50 pm                        |
 |Units      | 4                                     |
 |Location   | Environmental Technology Center (ETC) |
 |Instructor | Daniel Soto                           |
@@ -16,6 +17,7 @@ commercial settings that involve electrical devices, including lighting,
 motors, and HVAC. Fundamentals of electricity, electric power delivery,
 and the workings of common appliances; energy economics.
 
+<!-- 2014: revise learning objectives -->
 
 ## Learning Objectives
 - Understand and apply principles of electricity
@@ -35,13 +37,12 @@ presentation that integrates what they have learned in the class.
 
 ## Grading
 - Classroom work (quizzes, participation) 25%
-- Homework 25%
-- Midterm 20%
-- Research project 10%
-- Final exam 20%
-
+- Homework (problem sets, readings) 25%
+- Exams (midterm, final) 25%
+- Research project 25%
 
 ## Agreements
+
 - Respectful tone in classroom
 
 Civility is required from all students during discussions and
@@ -53,6 +54,12 @@ others learning goals.
 Internet-connected electronic devices (phones, tablets) may be used in
 class for learning purposes.  Using devices for social networks or other
 uses during class time is strongly discouraged.
+
+- Willingness to take risks and experiment
+
+I frequently try new approaches to teaching and learning.  These are
+always with the intention of making this class as beneficial to you as
+possible.
 
 
 ## Course Schedule
@@ -88,7 +95,15 @@ Here is the tentative reading schedule
 
 ## Project Schedule
 
-Here is the tentative project schedule.
+You will investigate a project in teams.
+You will choose a question related to electrical energy
+and then use techniques from this class to create estimates.
+The learning goals are for you to explore relevant topics in electrical
+energy use in ways similar to professional work.
+There will be a separate document that explains the expectations for the
+project that I will hand out in a few weeks.
+
+The tentative project schedule is listed here:
 
 {{ d['project-schedule.md'] }}
 
@@ -98,32 +113,28 @@ You will be graded both on the
 validity of your work as well as your ability to communicate your
 methods.  This means that in addition to the mathematics, you should be
 providing brief explanations of your techniques and your thought
-process.  Calculations without supporting arguments will not receive
-full credit.
+process.
 
-Homework will be graded on a coarse grading schedule of a 1, 2, or 3.  A
-3 is given for strong work that meets or exceeds the requirements, a 2
-for adequate work, and a 1 for work that doesn't meet expectations.
-After grading, you may submit a self-evaluation that considers how your
-approach differs from the accepted approach.  Self-evaluations that
-demonstrate an improvement in your understanding will raise your
-homework grade through partial credit.
+I will be experimenting with various homework assessment
+and feedback techniques throughout the semester.  Please have faith that
+these experiments have improving your learning as the main goal.
 
-Here is the tentative homework schedule.
+The tentative homework schedule is listed here:
 
 {{ d['homework-schedule.md'] }}
 
 ## Classroom Work
 
-We will solve problems in class that I hand out.  These are graded
-credit no credit.  If you have an unexcused absence on that day, you
-will receive a no credit grade for that days work.
+We will often perform individual and group work in class.  These may
+take the form of writing exercises, group exercises, or quizzes.
+If you have
+an unexcused absence on the day of work, you will not receive credit for
+that day's assignment.
 
 ## Office Hours
+Signup is online and can be accessed
+through my website at [danielrsoto.com](http://danielrsoto.com)
 
-My office hours are held Tuesday and Wednesday in my office in Rachel
-Carson Hall 12 from 2pm until 3pm.  Signup is online and can be accessed
-through my website at http://danielrsoto.com
 
 ## University Policies
 
