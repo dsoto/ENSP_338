@@ -124,14 +124,16 @@ Here is the tentative reading schedule
 | Date            | Reading           |
 |:----------------|:------------------|
 | Wed 27 Aug 2014 | REEPS 2.1-2.4     |
-| Mon 08 Sep 2014 | Luenberger        |
+| Mon 08 Sep 2014 | Luenberger 2      |
+| Mon 22 Sep 2014 | LBNL Reading      |
 | Wed 24 Sep 2014 | REEPS 3.1-3.2     |
 | Mon 29 Sep 2014 | REEPS 2.4-2.8     |
 | Mon 06 Oct 2014 | REEPS 3.3         |
+| Wed 08 Oct 2014 | REEPS 3.4         |
+| Wed 15 Oct 2014 | REEPS 3.5         |
 | Mon 27 Oct 2014 | REEPS2 Appendix A |
-| Mon 03 Nov 2014 | REEPS2 Chapter 3  |
 | Wed 05 Nov 2014 | ACEEE reading?    |
-| Mon 10 Nov 2014 | REEPS 1           |
+| Mon 10 Nov 2014 | REEPS 1, 3.7      |
 
 ## Project Schedule
 
@@ -147,8 +149,7 @@ The tentative project schedule is listed here:
 
 | Date            | Project              |
 |:----------------|:---------------------|
-| Wed 27 Aug 2014 | Brainstorm 3 topics  |
-| Wed 17 Sep 2014 | Choose topic         |
+| Wed 10 Sep 2014 | Brainstorm 3 topics  |
 | Mon 29 Sep 2014 | Outline              |
 | Mon 06 Oct 2014 | Outline Feedback     |
 | Mon 27 Oct 2014 | First draft          |
