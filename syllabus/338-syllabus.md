@@ -17,6 +17,7 @@ commercial settings that involve electrical devices, including lighting,
 motors, and HVAC. Fundamentals of electricity, electric power delivery,
 and the workings of common appliances; energy economics.
 
+<!-- 2014: revise learning objectives -->
 
 ## Learning Objectives
 - Understand and apply principles of electricity
@@ -122,8 +123,7 @@ Here is the tentative reading schedule
 
 | Date            | Reading           |
 |:----------------|:------------------|
-| Mon 25 Aug 2014 | REEPS 2.1-2.2     |
-| Wed 27 Aug 2014 | REEPS 2.3-2.4     |
+| Wed 27 Aug 2014 | REEPS 2.1-2.4     |
 | Mon 08 Sep 2014 | Luenberger        |
 | Wed 24 Sep 2014 | REEPS 3.1-3.2     |
 | Mon 29 Sep 2014 | REEPS 2.4-2.8     |
