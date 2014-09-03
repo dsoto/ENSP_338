@@ -78,8 +78,8 @@ impacts of electricity.
 |----------:|:----------------|:---------------------------|
 |         1 | Wed 20 Aug 2014 | Introduction               |
 |         2 | Mon 25 Aug 2014 | Electricity Physics        |
-|         3 | Wed 27 Aug 2014 | Ohms Law                   |
-|         4 | Wed 03 Sep 2014 | Kirchoff's Laws            |
+|         3 | Wed 27 Aug 2014 | Ohm and Kirchoff Laws      |
+|         4 | Wed 03 Sep 2014 | Power and Energy           |
 |         5 | Mon 08 Sep 2014 | Time Value of Money        |
 |         6 | Wed 10 Sep 2014 | NPV IRR                    |
 |         7 | Mon 15 Sep 2014 | Loads                      |
@@ -124,7 +124,7 @@ Here is the tentative reading schedule
 | Date            | Reading           |
 |:----------------|:------------------|
 | Wed 27 Aug 2014 | REEPS 2.1-2.4     |
-| Mon 08 Sep 2014 | Luenberger 2      |
+| Mon 08 Sep 2014 | Luenberger 1-2    |
 | Mon 22 Sep 2014 | LBNL Reading      |
 | Wed 24 Sep 2014 | REEPS 3.1-3.2     |
 | Mon 29 Sep 2014 | REEPS 2.4-2.8     |
