@@ -125,7 +125,7 @@ Here is the tentative reading schedule
 |:----------------|:------------------|
 | Wed 27 Aug 2014 | REEPS 2.1-2.4     |
 | Mon 08 Sep 2014 | Luenberger 1-2    |
-| Mon 22 Sep 2014 | LBNL Reading      |
+| Mon 22 Sep 2014 | Meier, 1984       |
 | Wed 24 Sep 2014 | REEPS 3.1-3.2     |
 | Mon 29 Sep 2014 | REEPS 2.4-2.8     |
 | Mon 06 Oct 2014 | REEPS 3.3         |
