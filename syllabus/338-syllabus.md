@@ -151,7 +151,7 @@ The tentative project schedule is listed here:
 |:----------------|:---------------------|
 | Wed 10 Sep 2014 | Brainstorm 3 topics  |
 | Mon 29 Sep 2014 | Outline              |
-| Mon 06 Oct 2014 | Outline Feedback     |
+| Mon 13 Oct 2014 | Outline Feedback     |
 | Mon 27 Oct 2014 | First draft          |
 | Mon 03 Nov 2014 | First draft feedback |
 | Wed 19 Nov 2014 | Final Report         |
@@ -174,7 +174,7 @@ The tentative homework schedule is listed here:
 |:----------------|:-----------|
 | Wed 27 Aug 2014 | Homework 0 |
 | Mon 15 Sep 2014 | Homework 1 |
-| Mon 29 Sep 2014 | Homework 2 |
+| Mon 06 Oct 2014 | Homework 2 |
 | Mon 13 Oct 2014 | Homework 3 |
 | Mon 27 Oct 2014 | Homework 4 |
 | Mon 10 Nov 2014 | Homework 5 |
