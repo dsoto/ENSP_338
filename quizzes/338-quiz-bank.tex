@@ -1,0 +1,456 @@
+\documentclass[12pt, oneside]{article}
+\usepackage{soto-homework}
+%\usepackage{graphicx}
+\usepackage{circuitikz}
+% \usepackage[nohead, margin=1.0in]{geometry}
+
+\input{solution}
+% set up whether we are printing assignment or solution
+% \newif\ifsolution
+% \solutiontrue
+% \solutionfalse
+
+% page formatting
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+
+% creates true false command with indented question
+% \newcommand{\tf}[1]
+% {
+% \vfill
+% \parbox[t]{0.25\textwidth}{\bf TRUE \hspace{0.1 in} FALSE }
+% \parbox[t]{0.75\textwidth}{#1 (2pt)}
+% }
+
+% creates heading for problems
+% \newcommand{\problem}[1]{{\bf Problem #1}}
+
+% creates centered heading for sections
+% \newcommand{\chead}[1]
+% {\begin{center}\large\textbf{#1}\end{center}
+% \hrule
+% \vspace{10pt}}
+
+% solution
+% \newcommand{\solution}[1]
+% {\ifsolution
+% Answer: {\it #1}
+% \else\fi}
+
+% end macros
+
+\begin{document}
+
+{\bf Quiz 1 \hfill ENSP 338 }
+\begin{center}
+\begin{circuitikz}[american voltages]
+\draw (0,0)
+ to[V=120 V] (0,4)
+ %to[short, i^>=I] (3,4)
+ -- (5,4)
+ to[closing switch=$S_2$] (5,2.5)
+ to[R, l=$R_2$] (5,0)
+ -- (0,0)
+
+ (3,4) to[closing switch=$S_1$] (3,2.5)
+ to[R, l=$R_1$] (3,0);
+\end{circuitikz}
+\end{center}
+
+\problem{}
+In this example, $R_1$ is a light we model as a 100 ohm resistor, and $R_2$ is
+a light we model as a 50 ohm resistor.  The voltage source is a standard wall
+outlet at 120 volts.
+
+When the switch is closed, how much power is dissipated in $R_1$?
+
+a) 288W
+
+b) 144W
+
+c) 1.2W
+
+\solution{
+We can use $V^2/R$ to determine this
+
+$$ 120^2 / 100 = 144 watts $$
+
+}
+
+
+\problem{}
+How much power is dissipated in $R_2$?
+
+a) 4.8W
+
+b) 144W
+
+c) 288W
+
+
+\solution{
+$$ 120^2 / 50 = 288 watts $$
+}
+
+\problem{}
+How much power is delivered by the power source?
+
+a) 432W
+
+b) 144W
+
+c) 288W
+
+\solution{
+The power supplied to the two bulbs must be delivered by the power supply so
+the total power is
+
+$$ 144W + 288W = 432W $$
+
+}
+
+\problem{}
+If electricity is purchased at 0.15 USD/kWh and switch one is closed for
+6 hours and switch two is closed for 4 hours, how much does the customer
+owe for this electricity?
+
+\solution{
+Using $E = P \cdot t$, for each load we get
+
+$$ E = 144W \cdot 6 hours + 288W \cdot 4 hours = 2016 Wh = 2.02 kWh $$
+
+$$ cost = 2.02 kWh \cdot 0.15 USD/kWh = 0.30 USD $$
+}
+
+a) 0.25 USD
+
+b) 0.30 USD
+
+c) 0.35 USD
+
+\newpage
+\setcounter{problem}{0}
+{\bf Quiz 2 \hfill ENSP 338 \hfill Fall 2014}
+\begin{center}
+\begin{circuitikz}[american voltages]
+\draw
+% voltage source
+ (0,0) to[V=120 V] (0,4)
+ % fuse
+ to[generic=10A Fuse] (3,4)
+ % top bus
+ -- (11,4)
+ % switch and resistor array
+ (3,4) to[closing switch] (3,2.5)
+ to[R, l=$R$] (3,0)
+ (5,4) to[closing switch] (5,2.5)
+ to[R, l=$R$] (5,0)
+ (7, 4) to[closing switch] (7, 2.5)
+ to[R, l=$R$] (7,0)
+ (9, 4) to[closing switch] (9, 2.5)
+ to[R, l=$R$] (9,0)
+ (11, 4) to[closing switch] (11, 2.5)
+ to[R, l=$R$] (11,0)
+ % bottom bus
+ -- (0,0)
+;
+\end{circuitikz}
+\end{center}
+
+
+\problem{}
+Each of these loads are small heaters with a resistance of 50 ohms.  What is the maximum number of switches that can be closed without
+blowing the fuse?
+
+a) 3
+
+b) 4
+
+c) 5
+
+\solution{
+
+We find the current from one $I = V/R = 120V/50ohm = 2.4 amps$ and then
+multiply by the number of switches.  4 gives 9.6 amps and 5 gives 12
+amps so we can only close 4.
+
+}
+
+\problem{}
+What is the maximum amount of power that can be delivered by this 10 amp
+circuit breaker before it blows?
+
+a) 600 W
+
+b) 1200 W
+
+c) 1800 W
+
+\solution{
+$$ P = V I= 120V \cdot 10A = 1200 W $$
+
+}
+
+\problem{}
+We model the parallel loads as a number of lamps on a 100 foot 18-gauge extension cord.
+A single 18 gauge wire has a resistance of 20.95 ohms per kilometer.
+When only one switch is closed, how much power is turned to heat in the
+extension cord?
+
+a) 12 W
+
+b) 24 W
+
+c) 48 W
+
+\solution{
+100 ft of the wire has a resistance of 2.1 ohms.  The extension cord has
+this resistance going there and back so the total resistance in the
+wires is 4.2 ohms.
+
+$$ P = I^2 R = 2.4^2 4.2 = 24.2W $$
+
+}
+
+\problem{}
+When two switches are closed, how much power is turned to heat in the
+wires?
+
+a) 24 W
+
+b) 48 W
+
+c) 96 W
+
+\solution{
+Since the current doubles, $I^2 R$ goes up by a factor of four.
+96 W
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+{\bf Quiz 3 \hfill ENSP 338 \hfill Fall 2014}
+
+\problem{}
+How much electricity is used?
+
+\problem{}
+How much money is spent?
+
+\problem{}
+How much carbon is emitted?
+
+\problem{}
+Net present value question?
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+{\bf Quiz 4 \hfill ENSP 338 \hfill Fall 2014}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+{\bf Quiz 5 \hfill ENSP 338 \hfill Fall 2014}
+
+Lighting Stuff
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+{\bf Quiz 6 \hfill ENSP 338 \hfill Fall 2014}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+{\bf Quiz 7 \hfill ENSP 338 \hfill Fall 2014}
+
+Motor Stuff
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+Quiz 9
+
+Carbon intensity and circuits
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{cruft}
+
+Exercise 3
+- How much energy is consumed by a 150W load that runs for 7 hours?
+- If the electricity cost is 0.15 USD per kWh, what did this load cost to run?
+
+Exercise 4
+- A refrigerator uses 1.8 kWh per day.  What is the average power draw
+  in watts for this refrigerator?
+
+
+% quiz 1
+
+ohms law kirchoffs laws
+
+% quiz 2
+
+time value of money
+compound interest
+
+% quiz 3
+
+loads and tariffs
+power and energy
+
+% quiz 4
+
+AC
+safety and basics
+
+% quiz 5
+
+power factor
+
+% quiz 6
+
+lighting
+
+% quiz 7
+
+motors and transformers
+
+
+
+
+% ohms and kirchoff's law questions
+
+%%% q
+
+What is the combined resistance of two 10 ohm resistors placed in
+series?
+
+a) 10 ohms
+b) 20 ohms
+c) 5 ohms
+
+
+%%%
+Placed in series, resistances add so 20 ohms
+
+
+%%% q
+Two parallel resistors
+
+%%%
+
+
+%%% q
+How many 60 watt lightbulbs can be placed on a 102V circuit before the 15 amp
+breaker is triggered?
+
+%%%
+
+%%% q
+How many joules in a kilowatt hour?
+
+%%%
+
+%%% q
+Which of the following formulas is correct for the resistance of a wire
+made of a material with resistivity $\rho$, length $l$, and area $A$?
+
+permute the fractions
+
+%%% a
+
+%%% q
+
+%%% a
+
+
+
+%%% q
+%%% a
+%%% q
+%%% a
+%%% q
+%%% a
+%%% q
+%%% a
+%%% q
+%%% a
+%%% q
+%%% a
+%%% q
+%%% a
+
+% time value of money questions
+
+% motor questions
+
+% transformer questions
+
+% AC questions
+
+% carbon intensity questions
+
+% tariff and economics questions
+
+% AC/DC questions
+\tf{A static magnetic field can induce a current in a wire.}
+\solution{False, only changing magnetic fields, from the perspective of
+the wire, can induce current.}
+\vfill
+
+\tf{Synchronous speed in an AC motor depends on the frequency of the
+voltage source.}
+\solution{True}
+\vfill
+
+\tf{An inverter converts AC electricity to DC electricity.}
+\solution{False, rectifiers convert AC to DC.}
+\vfill
+
+\tf{An ideal diode only allows current to flow in one direction.}
+\solution{True}
+\vfill
+
+\tf{The purchase cost of a motor is usually greater than the electricity
+used over its lifetime.}
+\solution{False, electricity often exceeds motor purchase cost by at
+least a factor of 10.}
+\vfill
+
+
+
+% Lighting questions
+
+\tf{Light sources with higher color temperatures appear more blue.}
+\solution{True}
+\vfill
+
+\tf{Incandescent light bulbs use phosphors to convert ultraviolet
+frequencies to visible frequencies.}
+\solution{False}
+\vfill
+
+\tf{Fluorescent light bulbs use phosphors to convert infrared frequencies
+to visible frequencies.}
+\solution{False}
+\vfill
+
+What color of light is the human eye most sensitive to? \\
+a) blue \\
+b) green \\
+c) red
+\solution{b) green}
+\vfill
+
+
+
+\end{document}
