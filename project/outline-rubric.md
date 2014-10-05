@@ -59,3 +59,14 @@ the overall goal of the paper.
 An unacceptable outline will not be well organized and will not give the
 reader a clear idea of what question the paper will answer.  It may also
 be very short.
+
+# Peer Feedback
+
+You will sign up to be a reviewer for two projects from the class on the
+project spreadsheet.  For each of the two projects, provide a short (1
+page max) written feedback for them that details the strengths and
+weaknesses of the outline.  Keep your comments as constructive as
+possible and refer to the material above to guide your feedback.
+
+Arrange among yourselves how you will view each others work and provide
+the feedback.  You will turn in a copy of your feedback to Moodle.
