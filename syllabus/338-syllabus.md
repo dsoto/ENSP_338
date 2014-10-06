@@ -128,8 +128,7 @@ Here is the tentative reading schedule
 | Mon 22 Sep 2014 | Meier, 1984       |
 | Wed 24 Sep 2014 | REEPS 3.1-3.2     |
 | Mon 29 Sep 2014 | REEPS 2.5-2.8     |
-| Mon 06 Oct 2014 | REEPS 3.3         |
-| Wed 08 Oct 2014 | REEPS 3.4         |
+| Wed 08 Oct 2014 | REEPS 3.3-3.4     |
 | Wed 15 Oct 2014 | REEPS 3.5         |
 | Mon 27 Oct 2014 | REEPS2 Appendix A |
 | Wed 05 Nov 2014 | ACEEE reading?    |
@@ -175,7 +174,7 @@ The tentative homework schedule is listed here:
 | Wed 27 Aug 2014 | Homework 0 |
 | Mon 15 Sep 2014 | Homework 1 |
 | Mon 06 Oct 2014 | Homework 2 |
-| Mon 13 Oct 2014 | Homework 3 |
+| Wed 15 Oct 2014 | Homework 3 |
 | Mon 27 Oct 2014 | Homework 4 |
 | Mon 10 Nov 2014 | Homework 5 |
 
