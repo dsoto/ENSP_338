@@ -174,7 +174,7 @@ The tentative homework schedule is listed here:
 | Wed 27 Aug 2014 | Homework 0 |
 | Mon 15 Sep 2014 | Homework 1 |
 | Mon 06 Oct 2014 | Homework 2 |
-| Wed 15 Oct 2014 | Homework 3 |
+| Mon 20 Oct 2014 | Homework 3 |
 | Mon 27 Oct 2014 | Homework 4 |
 | Mon 10 Nov 2014 | Homework 5 |
 
