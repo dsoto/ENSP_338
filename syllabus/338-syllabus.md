@@ -89,15 +89,15 @@ impacts of electricity.
 |        11 | Mon 29 Sep 2014 | Wiring and Safety          |
 |        12 | Wed 01 Oct 2014 | Inductance and Capacitance |
 |        13 | Mon 06 Oct 2014 | Real and Reactive Power    |
-|        14 | Wed 08 Oct 2014 | Power factor               |
+|        14 | Wed 08 Oct 2014 | Power Factor               |
 |        15 | Mon 13 Oct 2014 | GHTC Conference            |
-|        16 | Wed 15 Oct 2014 | Three Phase Power          |
-|        17 | Mon 20 Oct 2014 | Lighting Physics           |
-|        18 | Wed 22 Oct 2014 | Lighting Practice          |
-|        19 | Mon 27 Oct 2014 | Electromagnetic Physics    |
-|        20 | Wed 29 Oct 2014 | Transformers               |
-|        21 | Mon 03 Nov 2014 | Motors                     |
-|        22 | Wed 05 Nov 2014 | Motor Systems              |
+|        16 | Wed 15 Oct 2014 | Power Factor               |
+|        17 | Mon 20 Oct 2014 | Three Phase/Transformers   |
+|        18 | Wed 22 Oct 2014 | Motors                     |
+|        19 | Mon 27 Oct 2014 | Motor Systems              |
+|        20 | Wed 29 Oct 2014 | Lighting Physics           |
+|        21 | Mon 03 Nov 2014 | Lighting Practice          |
+|        22 | Wed 05 Nov 2014 | Electromagnetic Physics    |
 |        23 | Mon 10 Nov 2014 | Utility Grid Technology    |
 |        24 | Wed 12 Nov 2014 | Carbon intensity           |
 |        25 | Mon 17 Nov 2014 | Optional Topics            |
@@ -131,7 +131,6 @@ Here is the tentative reading schedule
 | Wed 08 Oct 2014 | REEPS 3.3-3.4     |
 | Wed 15 Oct 2014 | REEPS 3.5         |
 | Mon 27 Oct 2014 | REEPS2 Appendix A |
-| Wed 05 Nov 2014 | ACEEE reading?    |
 | Mon 10 Nov 2014 | REEPS 1, 3.7      |
 
 ## Project Schedule
@@ -174,9 +173,10 @@ The tentative homework schedule is listed here:
 | Wed 27 Aug 2014 | Homework 0 |
 | Mon 15 Sep 2014 | Homework 1 |
 | Mon 06 Oct 2014 | Homework 2 |
-| Mon 20 Oct 2014 | Homework 3 |
-| Mon 27 Oct 2014 | Homework 4 |
-| Mon 10 Nov 2014 | Homework 5 |
+| Wed 22 Oct 2014 | Homework 3 |
+| Wed 05 Nov 2014 | Homework 4 |
+| Wed 12 Nov 2014 | HWM1-3     |
+| Mon 17 Nov 2014 | Homework 5 |
 
 ## Classroom Work
 
