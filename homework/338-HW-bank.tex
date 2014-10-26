@@ -1,11 +1,13 @@
 \documentclass{article}
 \usepackage{soto-homework}
-\usepackage{pythontex}
+% \usepackage{pythontex}
 \usepackage{siunitx}
 
 % set up whether we are printing assignment or solution
 \newif\ifsolution
 \input{solution}
+
+% todo: strip out pythontex stuff.  it feels crazy to use it...
 
 \begin{document}
 
@@ -223,15 +225,15 @@ Electrical Resistivities of the Elements.
 
 % TODO: use \SI macro to take care of units?
 
-\begin{pycode}
-resistivity = 1.68e-8
-length = 1000
-area = 3.1415 * (2.053e-3/2)**2
-rCopper = resistivity * length / area
-areaStr = '\\num{{{:.3g}}}'.format(area)
-rCopStr = '\\num{{{:.3g}}}'.format(rCopper)
-resStr = '\\num{{{:.3g}}}'.format(resistivity)
-\end{pycode}
+% \begin{pycode}
+% resistivity = 1.68e-8
+% length = 1000
+% area = 3.1415 * (2.053e-3/2)**2
+% rCopper = resistivity * length / area
+% areaStr = '\\num{{{:.3g}}}'.format(area)
+% rCopStr = '\\num{{{:.3g}}}'.format(rCopper)
+% resStr = '\\num{{{:.3g}}}'.format(resistivity)
+% \end{pycode}
 
 \subproblem
 From the resistivity of copper, and from the wire dimensions in the AWG
@@ -243,13 +245,16 @@ conversions.  Assume room temperature.
 $$ R = \frac{\rho l}{a} $$
 
 The cross sectional area is
-\py{areaStr}
+% \py{areaStr}
 square meters
 
 The resistance is
-$$ R = \frac{\py{resStr}\Omega \cdot \py{length}}{\py{areaStr}}
-= \py{rCopStr} \Omega / km
+$$ R = \frac{\SI{1.678E-8}{\ohm\meter}\cdot \SI{1000}{\meter}}
+{\SI{3.31E-6}{\meter^2}}
+ = \SI{5.08}{\ohm\kilo\meter^{-1}}
 $$
+
+So the resistance per unit length is 5.08 ohms per kilometer of wire.
 }
 
 \subproblem
@@ -257,7 +262,10 @@ Calculate the resistance of 12 AWG aluminum wire in ohms/km at room
 temperature. Why is copper preferred over aluminum conductor, even though it is
 more expensive?
 
-
+\solution{
+This is the same as above but we substitute the resistivity of Aluminum.
+\newpage
+}
 
 \problem{The curse of the extension cord}
 
@@ -269,31 +277,86 @@ like a resistor). Assume a nominal voltage of 120V ac.
 Will a single 15A circuit be able to handle all these loads operating at the
 same time?
 
+\solution{
+We find all the currents by using $P = VI$ and add them together.
+
+toaster 5A, microwave 6.67 A, each light 0.83A
+
+Added we get 14.16A which is just under 15A.
+}
+
 \subproblem
 What is the resistance of each load?
+
+\solution{
+We find the resistance using $P = V^2/R$.  We can use this formula since
+each resistance has the full 120V drop across it.
+
+Toaster 24 ohms, microwave 18 ohms, lights 144 ohms
+}
 
 \subproblem
 Suppose all these appliances are plugged into a power strip at the end of a
 long extension cord. The cord has a resistance of 0.2 ohms. How much power is
-dissipated in the cord? Do you think this might be a problem?
+dissipated in the cord?  (Assume the voltage at the loads does not
+change.)  Do you think this might be a problem?
+
+\solution{
+The power in the cord is given by $P = I^2 R$ where we make the
+assumption that the voltage drop is small and that the loads still see
+basically 120 volts.
+
+$$ P = (14.16)^2 0.2 \Omega = 40.1 W $$
+
+This almost half as much power as one of the light bulbs.
+}
 
 \subproblem
 What is the voltage drop in the extension cord? If the voltage at the outlet
 is exactly 120.0V, what is the voltage seen by the loads?
 
+\solution{
+The voltage drop is given by $V=IR$
+$$ V = 14.16A \cdot 0.2 \Omega = 2.83V $$
+This reduces the voltage on the loads to
+$$ V_{load} = 120V - 2.83V = 117.2 V $$
+}
+
 \subproblem
 How much power does each appliance actually draw under these conditions?
 
+\solution{
+We want to use a voltage divider model this.
+We can find the equivalent resistance for all loads and then solve for
+the current.
+
+The equivalent resistance for all the loads is
+
+$$ R_{load} = (\frac{1}{24 \Omega} + \frac{1}{18 \Omega} + \frac{3}{144
+\Omega})^{-1} = 8.47 \Omega $$
+
+The voltage across the load will be given by
+
+$$ V_{load} = 120V \frac{8.47}{8.47+0.2 = 17.23} $$
+
+Note this is very close to our previous estimate.
+
+We can use this new voltage in $P = V^2/R$ and get the toaster at 573W,
+the microwave at 753W, and the lights at 95W.  Each of these is a bit
+less than the power at 120V.
+
+\newpage
+}
 
 
 
 \problem{Power Bill}
 
-\begin{pycode}
-energykWh = 14000
-rate = 0.12
-energycharge = energykWh * rate
-\end{pycode}
+% \begin{pycode}
+% energykWh = 14000
+% rate = 0.12
+% energycharge = energykWh * rate
+% \end{pycode}
 
 % something weird happened here where the python variables in the
 % solution and the handout don't match
@@ -309,10 +372,10 @@ What is the energy charge for this month?
 
 \solution{Energy charges are based on the electrical energy consumed
 over the billing time period.
-$$
-\py{energykWh} \textrm{kWh} \cdot
-\py{rate} USD/kWh =
-\py{energycharge} \textrm{USD} $$
+% $$
+% \py{energykWh} \textrm{kWh} \cdot
+% \py{rate} USD/kWh =
+% \py{energycharge} \textrm{USD} $$
 }
 
 \subproblem
@@ -332,17 +395,48 @@ multiplied by the total time in one month, since energy equals power
 multiplied by time.
 $$ P_{avg} = \textrm{average power} = \frac{14000 kWh}{30 days\cdot 24
 hr/day} = 19.4 kW $$
+\newpage
 }
 
 
 
 \problem{REEPS2 Problem 2.11}
 
+\solution{
 
-\problem{}
+a) We want to calculate the difference in power loss between the 10 AWG
+wire and 12 AWG wire.
+
+Using table 2.3, 10 AWG wire is 0.0999 ohms per foot and 12 AWG wire is
+0.1588 ohms per foot.
+
+\begin{tabular}{c c}
+10 AWG & 12 AWG \\
+0.0999 ohms per foot & 0.1588 \\
+79W & 127W \\
+197.5 kWh & 317.5 kWh \\
+
+
+\end{tabular}
+
+The savings is the difference
+$$ 317.5 - 197.5 = 120 kWh$$ saved each year
+
+b) $$\textrm{simple payback} = \frac{\textrm{extra first
+cost}}{\textrm{annual energy savings}}$$
+
+The extra cost is 70 USD - 50 USD = 20 USD
+
+$$ \frac{20 USD}{120kWh/year \cdot 0.10 USD/kWh} = 1.67 years $$
+
+}
+
+
+\problem{Time Spent}
 Estimate how much time you spent working on this problem set to the
 nearest hour.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \setcounter{problem}{0}
 \setcounter{page}{1}
@@ -352,68 +446,7 @@ nearest hour.
 
 {\tiny Last modified: \today}
 
-\problem{}
-Name two reasons why an AC power grid with transmission voltages of several
-hundred kVolts and residential service at 120 -- 240 V AC is better suited to a
-national power grid than a DC system with generation at 600 Volts and
-residential service at 24 Volts.
-
-\problem{}
-What is the net present value of the wiring losses in a circuit over
-time?  Assume the cost of wire and the benefit in increasing it.  Where
-is the point of diminishing returns?
-
- ENSP 338 Homework 3
-
-Due Date:  Mon 14 Oct 2013
-
-The problem set you turn in should be both legible and the methods and
-assumptions you are using must be clear.  The point of the problem set
-is for you to communicate your analysis.  I strongly suggest that you
-use diagrams where appropriate and clearly state your assumptions.
-Typesetting of problem sets can increase the readability.  The homework
-will be graded on the clarity of the method as much as the correctness
-of the result.
-
-
- Problem 1
-
-Your Basic Transformer
-
-A step-down transformer is connected between Phase A and neutral on a
-distribution circuit that has a nominal (phase-to-phase) voltage of 21
-kV.  The turns ratio of the transformer is 50:1.
-
-State your answers to two significant figures.
-
-a. What is the rms voltage on the secondary (customer, low-voltage)
-side of the transformer? (5 pts)
-
-b. Suppose the customer's load is 14.4 kW.  What is the current on the
-primary (high-voltage) side of the transformer? (5 pts)
-
-c. Which wires need to be thicker: those on the primary or secondary
-side? (5 pts)
-
-d. Sketch a diagram that explains how one could use the same transformer
-with a different connection to also provide 120V service. (5 pts)
-
- Problem 2
-
-Transformer, More Realistic
-
-A transformer has 250 turns on the primary and 50 turns on the secondary
-winding.  The transformer is 96% efficient, so that 4% of the power
-entering on the primary side is converted to heat.
-
-a. If this transformer is supplying a purely resistive load of 10 kW at
-120V on the secondary side, what is the current in the primary winding?
-(10 pts)
-
-b. Explain how the answer would differ if the load still measures 10kW of
-real power, but is not purely resistive. (10 pts)
-
- Problem 3
+\problem{Power Triangle}
 
 Draw a power triangle labeling the angle, the side of the triangle
 that represents real power, the side of the triangle that represents
@@ -422,74 +455,377 @@ power.
 
 a. Assume that a given load has reactive power that is equal to 30 kVAR
 and real power equal to 60 kW, calculate the power factor and show your
-work and the equations that you use. (5 pts)
+work and the equations that you use.
 
 b. Calculate the apparent power associated with the values specified in
-part a. (5 pts)
+part a.
 
 c. In part a. above, the reactive power is a positive number.  What type
 of load (inductive, capacitive or resistive) produces a positive
-reactive power. (5 pts)
+reactive power.
 
 d. What type of load can be added to the load described in a. to reduce
-the reactive power? (5 pts)
+the reactive power?
+
+\solution{
+a) We draw a power triangle.
+
+$$ S = \sqrt{P^2 + Q^2} $$
+$$ S = \sqrt{30^2 + 60^2} = 67.1 kVA$$ is the apparent power
+
+Find the power factor
+$$ \cos\theta = \frac{60 kW}{67.1 kVA} = 0.89 $$
+
+The angle is given by
+$$ \cos^{-1}\frac{60 kW}{67.1 kVA} = 26.6 degrees $$
+
+b) The apparent power is 67.1 kVA
+
+c) Inductive loads produce positive reactive power
+
+d) A capacitive load can be added to provide negative reactive power and
+reduce the positive reactive power from the inductive load.
+
+}
+
+\problem{High Voltage Transmission}
+Name two reasons why an AC power grid with transmission voltages of several
+hundred kVolts and residential service at 120 -- 240 V AC is better suited to a
+national power grid than a DC system with generation at 600 Volts and
+residential service at 24 Volts.
+
+\solution{
+
+Transmission losses will be lower as we go to higher transmission
+voltages since less current must be used for the same power transmission
+at higher voltages.
+
+Wiring costs are lowered in a home since not as much current must be
+carried.
+
+}
 
 
- Problem 4
-REEPS2 3.10
+\problem{REEPS2 3.10}
 
-a. (5 pts)
+\solution{
+a) The real power is the power factor times theh apparent power
 
-b. (5 pts)
+$$ P = 0.7 \cdot 900 kVA = 630 kW $$
 
-c. (5 pts)
+b) at the max carrying capacity of the transformer (1000 kVA), the real
+power delivered will be
 
- Problem 5
-REEPS2 3.11
+$$ 1000 kVA \cdot 0.7 = 700 kW$$
 
-a. (5 pts)
+So 70 kW can be added before exceeding the capacity of the transformer.
 
-b. (5 pts)
+c) If the power factor is improved to 1, the real power and apparent
+power will be equal and the transformer will be able to provide enough
+current to provide 1000 kW of power.  This means that 370 kW more can be
+supplied.
+}
 
-c. (5 pts)
+\problem{REEPS2 3.11}
 
- Problem 6
-REEPS2 3.12 (15 pts)
+\solution{
+a) We find the current in the wires using the apparent power.
 
- Problem 7
-Please estimate the amount of time you spent on this homework. (5 pts)
+$$ 3600 W = S \cdot 0.5$$
+$$ S = 7200W = VI $$
+$$ 7200W = 240V \cdot I $$
+$$ I = 30A $$
+
+According to table 2.3 in REEPS2, 10 ga wire can handle 30A.
+
+b) To find the power loss, we get the wire resistance.  10 ga wire has a
+resistance of 0.0999 ohms per 100 ft.  We need 200 feet of wire to
+provide two conductors at a distance of 100 ft.
+
+$$ R = 0.198 \Omega$$
+$$ P = I^2 R = 30^2 \cdot 0.198 \Omega = 178W $$
+
+c) The key here is that we can add the real power of the motor and the
+wires together
+
+we can find the real and reactive power of the motor.
+
+real power was given as 3600W
+
+
+}
+
+\problem{REEPS2 3.12}
+
+\problem{Time Spent}
+Estimate how much time you spent working on this problem set to the
+nearest hour.
 
 
 
-
-\problem{Christmas Lights}
-
-\subproblem
-Consider a string of Christmas lights with 50 bulbs connected in series.
-The voltage across the entire string is 120V.  What is the voltage drop across
-each individual bulb?
-
-\subproblem
-If each bulb draws 4W, what is its resistance?
-
-\subproblem
-What is the current through each bulb?
-
-\subproblem
-Through the entire string?
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\setcounter{problem}{0}
+\setcounter{page}{1}
 \chead{ENSP 338 Homework 4}
-\chead{Due Date:  Tue 26 Nov 2013}
 \hrule
 \vspace{10pt}
 
-The problem set you turn in should be both legible and the methods and
-assumptions you are using must be clear.  I strongly suggest that you
-use diagrams where appropriate and clearly state your assumptions.
-Typesetting of problem sets can increase the readability.  The homework
-will be graded on how well you communicate your method as much as the
-correctness of the result.
+{\tiny Last modified: \today}
+
+
+\problem{Your Basic Transformer}
+
+A step-down transformer is connected between Phase A and neutral on a
+distribution circuit that has a nominal (phase-to-phase) voltage of 21
+kV.  The turns ratio of the transformer is 50:1.
+
+State your answers to two significant figures.
+
+\newcommand{\quizbox}[1]{
+\begin{minipage}{0.25\textwidth}
+\framebox[1.5in]{\rule{0cm}{0.8cm}}
+\end{minipage}
+\begin{minipage}{0.75\textwidth}
+\subproblem
+#1
+\end{minipage}
+}
+
+\subproblem Draw a schematic of the transformer, labeling the voltages, currents,
+supply, and load.
+
+\quizbox{What is the rms voltage on the secondary (customer, low-voltage)
+side of the transformer?}
+
+\quizbox{Suppose the customer's load is 14.4 kW.  What is the current on the
+primary (high-voltage) side of the transformer?}
+
+\quizbox{Which wires need to be thicker: those on the primary or secondary
+side?}
+
+\subproblem Sketch a diagram that explains how one could use the same transformer
+with a different connection to also provide 120V service.
+
+
+\problem{Transformer, More Realistic}
+
+A transformer has 250 turns on the primary and 50 turns on the secondary
+winding.  The transformer is 96\% efficient, so that 4\% of the power
+entering on the primary side is converted to heat.
+
+\quizbox{If this transformer is supplying a purely resistive load of 10 kW at
+120V on the secondary side, what is the current in the primary winding?}
+
+
+\subproblem Explain how the answer would differ if the load still measures 10kW of
+real power, but is not purely resistive.
+
+
+\problem{Motor Problem}
+
+A single-phase 120V, 2 hp motor operates at a power factor of 0.70 and
+an efficiency of 82\% at full load.  It operates for a duty cycle of 12
+hours in every 24-hour period.  The price of electricity is \$0.15/kWh.
+
+\quizbox{What is this motor's annual operating cost (ignoring
+maintenance)?}
+
+\solution{
+To begin, we estimate the electricity use over one year.  We then
+multiply by the unit cost of electricity.
+We calculate the electrical power for the motor from the delivered
+mechanical power (2hp) and the efficiency.
+$$ P = 2hp\cdot \ufrac{746W}{1hp} \ufrac{1 unit electrical power}{0.82
+units mechanical power} = 1820 W$$
+We then calculate the energy over the year.
+$$ 1820W \cdot 365 days \cdot \ufrac{12 hours}{day} = 7969 kWh$$
+Finally, the price paid for the electricity
+$$7969 kWh \cdot 0.15 USD/kWh = 1195 \textrm{USD per year}$$
+}
+
+\quizbox{What would be the savings due to an efficiency increase from 82 to
+87\%?}
+
+\solution{
+To find the cost for an 87\% efficient motore, we could repeat the
+calculation above, or we could equivalently multiply by the ratio in
+efficiencies.
+$$ \$1195 \cdot \frac{0.82}{0.87} = \$1127 $$
+The difference between these two figures is 68 USD per year.
+}
+
+\quizbox{What is the current drawn by this motor at full load?}
+
+\solution{
+The RMS current in the wire will be given by dividing the apparent power
+by the voltage.  We find the apparent power by dividing the real power
+by the power factor.
+$$ S = \textrm{apparent power} = 1820 W \cdot \frac{1}{0.7} = 2.6 kVA $$
+$$ I = S/V = 2600 VA / 120 = 21.7 A$$
+If we had used the real power, we would have underestimated the current
+in the wiring.
+}
+
+\subproblem Discuss the financial savings to the owner of increasing the power
+factor from 0.7 to 0.8, while leaving real power unchanged.
+
+\solution{
+An improvement in the power factor (for equal real power) would decrease
+the consumption of reactive power and current.  This would have the
+benefits of lowering the current in the distribution, lowering line
+losses.  It could also avoid charges from the utility for poor power
+factor or for the delivery of reactive power.
+}
+
+\problem{Time Spent}
+Estimate how much time you spent working on this problem set to the
+nearest hour.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\setcounter{problem}{0}
+\setcounter{page}{1}
+\chead{ENSP 338 Homework 5}
+\hrule
+\vspace{10pt}
+
+{\tiny Last modified: \today}
+
+
+\problem{Color rendering}
+
+Explain in your own words why colors illuminated by a fluorescent light
+look different than in mid-day sunshine. (10 pts)
+
+\solution{Our perception of the color of an object is based on the
+relative powers of the different wavelengths of visible radiation
+reflected by the object.  If the mixture of wavelengths illuminating the
+object are different, the reflected spectrum, and thus the perceived
+color of the object will be different.}
+
+\problem{Lamp Light}
+
+A lamp produces an illuminance of 60 lux on a desk 2 meters below.
+
+\subproblem If this lamp has a even illumination over all angles, what will the
+illuminance be at 4 meters away? (3 pts)
+
+\solution{
+By the inverse square law, since the distance increases by a factor of
+two the illumanance will decrease by a factor of 4 and be 15 lux.
+}
+
+\subproblem What is that illuminance in foot-candles on the desk surface? (2
+pts)
+
+\solution{
+Both lux and foot-candles are units of luminous flux per unit area, so
+we can convert between them with a unit conversion.
+$$ 60 lux \cdot \ufrac{1 fc}{10.76 lux} = 5.58 fc$$
+}
+
+\subproblem What is the total luminous flux in lumens from this lamp, assuming it
+is an ideal light bulb radiating equally in every direction? (3 pts)
+
+\solution{
+Based on the assumption of uniform illumination at all angles, we
+estimate that the total luminous flux is equal to the illuminance
+multiplied by the area of the sphere with a radius of 2 meters.
+$$ 60 lux \cdot 4 \pi r^2 $$
+$$ 60 lux \cdot 4 \cdot 3.14 \cdot 4m^2 = 3014 lumens $$
+This is equivalent to two 100 watt incandescent lightbulbs.
+}
+
+\subproblem What is the luminous intensity of the source in candela? (2 pts)
+
+\solution{
+Recall that luminous intensity is the lumens per solid angle and that
+there are 4$\pi$ or about 12 steradians in sphere.  To get the luminous
+intensity we divide the lumens by the solid angle.
+$$ 3014 / (4 * 3.14) = 240 candela$$
+}
+
+\subproblem If the upper hemisphere of the lighting fixture reflects light
+downward so that the entire luminous flux is radiated evenly over only half a
+sphere, but the lumens are held constant, what is the luminous intensity
+in candela now? (3 pts)
+
+\solution{
+Our fixture reduces the solid angle in which light radiates from the
+entire sphere to half a sphere.  This means that the solid angle reduces
+from 4$\pi$ to 2$\pi$ steradians or from about 12 to about 6 steradians.
+The luminous intensity increases by a factor of 2 to 480 candelas.
+}
+
+
+\problem{Lighting Costs}
+
+A kerosene lantern produces 40 lumens while consuming 30 milliliters
+(ml) of kerosene
+per hour.  An LED lightbulb outputs 900 lumens while consuming 10 watts
+of electrical power.
+
+\subproblem Assume kerosene costs 1 USD/liter.  Considering only the fuel cost,
+what is the cost per kilolumen-hour (klhr) for the kerosene lantern? (5 pts)
+
+\solution{
+The light output, lumens, and the fuel use are both rates.  We need to
+multiply these by a unit of time to get the unit of light energy,
+kilolumen-hours.  This should be reminiscent of multiplying the power by
+time to get energy.
+$$ \ufrac{30 ml/hour}{40 lumens} \cdot
+   \ufrac{hour}{hour}
+   = 0.75 \ufrac{ml}{lumen-hour}$$
+$$ \ufrac{0.75 ml}{lumen-hour} \cdot
+\ufrac{1000 lumen-hour}{klhr} \cdot
+\ufrac{1 USD}{1000 ml} = 0.75 USD/klhr$$
+}
+
+\subproblem Assuming electricity costs 0.13 USD/kWh, what is the cost per
+kilolumen-hour for the LED lightbulb? (5 pts)
+
+\solution{
+$$ \ufrac{10 watts}{900 lumens} \cdot
+   \ufrac{hour}{hour} \cdot
+   \ufrac{1 kWh}{1000 Wh} \cdot
+   \ufrac{0.13 USD}{kWh} \cdot
+   \ufrac{1000 lumen-hour}{klhr}
+   = 0.0014 USD/klhr$$
+}
+\subproblem What do you find noticeable about this result? (5 pts)
+
+\solution{
+We see that per unit of light, kerosene light is over 500 times more
+expensive (based on the fuel cost) than the electricity used to power an
+LED lightbulb.
+}
+
+%- mills, offgrid-lighting.pdf
+%- efficacy of around 500 lumen-hours per liter
+
+\problem{Time Spent}
+
+Please estimate the amount of time you spent on this homework. (5 pts)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\setcounter{problem}{0}
+\setcounter{page}{1}
+\chead{ENSP 338 Homework Bank}
+\hrule
+\vspace{10pt}
+
+\problem{Wiring NPV}
+What is the net present value of the wiring losses in a circuit over
+time?  Assume the cost of wire and the benefit in increasing it.  Where
+is the point of diminishing returns?  Note this is similar to REEPS
+2.11.
+
+
+
 
 
 \problem{Power Bill}
@@ -514,7 +850,7 @@ consumption over the billing period.
 $$ 50 kW peak \cdot 30 USD/kW peak = 1500 USD$$
 }
 
-%\paragraph{c.} What is the power factor correction charge? (5 pts)
+%\subproblem What is the power factor correction charge? (5 pts)
 
 
 \subproblem
@@ -526,178 +862,6 @@ multiplied by time.
 $$ P_{avg} = \textrm{average power} = \frac{14000 kWh}{30 days\cdot 24
 hr/day} = 19.4 kW $$
 }
-
-\section{Motor Problem}
-
-A single-phase 120V, 2 hp motor operates at a power factor of 0.70 and
-an efficiency of 82\% at full load.  It operates for a duty cycle of 12
-hours in every 24-hour period.  The price of electricity is \$0.15/kWh.
-
-\paragraph{a.} What is this motor's annual operating cost (ignoring maintenance)?
-(5 pts)
-
-\solution{
-To begin, we estimate the electricity use over one year.  We then
-multiply by the unit cost of electricity.
-We calculate the electrical power for the motor from the delivered
-mechanical power (2hp) and the efficiency.
-$$ P = 2hp\cdot \ufrac{746W}{1hp} \ufrac{1 unit electrical power}{0.82
-units mechanical power} = 1820 W$$
-We then calculate the energy over the year.
-$$ 1820W \cdot 365 days \cdot \ufrac{12 hours}{day} = 7969 kWh$$
-Finally, the price paid for the electricity
-$$7969 kWh \cdot 0.15 USD/kWh = 1195 \textrm{USD per year}$$
-}
-
-\paragraph{b.} What would be the savings due to an efficiency increase from 82 to
-87\%? (5 pts)
-
-\solution{
-To find the cost for an 87\% efficient motore, we could repeat the
-calculation above, or we could equivalently multiply by the ratio in
-efficiencies.
-$$ \$1195 \cdot \frac{0.82}{0.87} = \$1127 $$
-The difference between these two figures is 68 USD per year.
-}
-
-\paragraph{c.} What is the current drawn by this motor at full load? (5 pts)
-
-\solution{
-The RMS current in the wire will be given by dividing the apparent power
-by the voltage.  We find the apparent power by dividing the real power
-by the power factor.
-$$ S = \textrm{apparent power} = 1820 W \cdot \frac{1}{0.7} = 2.6 kVA $$
-$$ I = S/V = 2600 VA / 120 = 21.7 A$$
-If we had used the real power, we would have underestimated the current
-in the wiring.
-}
-
-\paragraph{d.} Discuss the financial savings to the owner of increasing the power
-factor from 0.7 to 0.8, while leaving real power unchanged. (5 pts)
-
-\solution{
-An improvement in the power factor (for equal real power) would decrease
-the consumption of reactive power and current.  This would have the
-benefits of lowering the current in the distribution, lowering line
-losses.  It could also avoid charges from the utility for poor power
-factor or for the delivery of reactive power.
-}
-
-
-\section{Color rendering}
-
-Explain in your own words why colors illuminated by a fluorescent light
-look different than in mid-day sunshine. (10 pts)
-
-\solution{Our perception of the color of an object is based on the
-relative powers of the different wavelengths of visible radiation
-reflected by the object.  If the mixture of wavelengths illuminating the
-object are different, the reflected spectrum, and thus the perceived
-color of the object will be different.}
-
-\section{Lamp Light}
-
-A lamp produces an illuminance of 60 lux on a desk 2 meters below.
-
-\paragraph{a.} If this lamp has a even illumination over all angles, what will the
-illuminance be at 4 meters away? (3 pts)
-
-\solution{
-By the inverse square law, since the distance increases by a factor of
-two the illumanance will decrease by a factor of 4 and be 15 lux.
-}
-
-\paragraph{b.} What is that illuminance in foot-candles on the desk surface? (2
-pts)
-
-\solution{
-Both lux and foot-candles are units of luminous flux per unit area, so
-we can convert between them with a unit conversion.
-$$ 60 lux \cdot \ufrac{1 fc}{10.76 lux} = 5.58 fc$$
-}
-
-\paragraph{c.} What is the total luminous flux in lumens from this lamp, assuming it
-is an ideal light bulb radiating equally in every direction? (3 pts)
-
-\solution{
-Based on the assumption of uniform illumination at all angles, we
-estimate that the total luminous flux is equal to the illuminance
-multiplied by the area of the sphere with a radius of 2 meters.
-$$ 60 lux \cdot 4 \pi r^2 $$
-$$ 60 lux \cdot 4 \cdot 3.14 \cdot 4m^2 = 3014 lumens $$
-This is equivalent to two 100 watt incandescent lightbulbs.
-}
-
-\paragraph{d.} What is the luminous intensity of the source in candela? (2 pts)
-
-\solution{
-Recall that luminous intensity is the lumens per solid angle and that
-there are 4$\pi$ or about 12 steradians in sphere.  To get the luminous
-intensity we divide the lumens by the solid angle.
-$$ 3014 / (4 * 3.14) = 240 candela$$
-}
-
-\paragraph{e.} If the upper hemisphere of the lighting fixture reflects light
-downward so that the entire luminous flux is radiated evenly over only half a
-sphere, but the lumens are held constant, what is the luminous intensity
-in candela now? (3 pts)
-
-\solution{
-Our fixture reduces the solid angle in which light radiates from the
-entire sphere to half a sphere.  This means that the solid angle reduces
-from 4$\pi$ to 2$\pi$ steradians or from about 12 to about 6 steradians.
-The luminous intensity increases by a factor of 2 to 480 candelas.
-}
-
-
-\section{Lighting Costs}
-
-A kerosene lantern produces 40 lumens while consuming 30 milliliters
-(ml) of kerosene
-per hour.  An LED lightbulb outputs 900 lumens while consuming 10 watts
-of electrical power.
-
-\paragraph{a.} Assume kerosene costs 1 USD/liter.  Considering only the fuel cost,
-what is the cost per kilolumen-hour (klhr) for the kerosene lantern? (5 pts)
-
-\solution{
-The light output, lumens, and the fuel use are both rates.  We need to
-multiply these by a unit of time to get the unit of light energy,
-kilolumen-hours.  This should be reminiscent of multiplying the power by
-time to get energy.
-$$ \ufrac{30 ml/hour}{40 lumens} \cdot
-   \ufrac{hour}{hour}
-   = 0.75 \ufrac{ml}{lumen-hour}$$
-$$ \ufrac{0.75 ml}{lumen-hour} \cdot
-\ufrac{1000 lumen-hour}{klhr} \cdot
-\ufrac{1 USD}{1000 ml} = 0.75 USD/klhr$$
-}
-
-\paragraph{b.} Assuming electricity costs 0.13 USD/kWh, what is the cost per
-kilolumen-hour for the LED lightbulb? (5 pts)
-
-\solution{
-$$ \ufrac{10 watts}{900 lumens} \cdot
-   \ufrac{hour}{hour} \cdot
-   \ufrac{1 kWh}{1000 Wh} \cdot
-   \ufrac{0.13 USD}{kWh} \cdot
-   \ufrac{1000 lumen-hour}{klhr}
-   = 0.0014 USD/klhr$$
-}
-\paragraph{c.} What do you find noticeable about this result? (5 pts)
-
-\solution{
-We see that per unit of light, kerosene light is over 500 times more
-expensive (based on the fuel cost) than the electricity used to power an
-LED lightbulb.
-}
-
-%- mills, offgrid-lighting.pdf
-%- efficacy of around 500 lumen-hours per liter
-
-\section{Time Spent}
-
-Please estimate the amount of time you spent on this homework. (5 pts)
 
 \problem{Voltage Drop}
 
@@ -754,5 +918,21 @@ order of magnitude in your estimate in d.
 Solve the following problems at the end of chapter 2 in the REEPS text.
 
 Problems:  2.6, 2.9
+
+\problem{Christmas Lights}
+
+\subproblem
+Consider a string of Christmas lights with 50 bulbs connected in series.
+The voltage across the entire string is 120V.  What is the voltage drop across
+each individual bulb?
+
+\subproblem
+If each bulb draws 4W, what is its resistance?
+
+\subproblem
+What is the current through each bulb?
+
+\subproblem
+Through the entire string?
 
 \end{document}
