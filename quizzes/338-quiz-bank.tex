@@ -193,10 +193,10 @@ $$ P = V I= 120V \cdot 10A = 1200 W $$
 }
 
 \problem{}
-We model the parallel loads as a number of lamps on a 100 foot 18-gauge extension cord.
+We model the parallel loads as a number of lamps on a 100 meter 18-gauge extension cord.
 A single 18 gauge wire has a resistance of 20.95 ohms per kilometer.
-When only one switch is closed, how much power is turned to heat in the
-extension cord?
+When only one switch is closed, the power turned to heat in the
+extension cord is closest to which?
 
 a) 12 W
 
@@ -205,11 +205,26 @@ b) 24 W
 c) 48 W
 
 \solution{
-100 ft of the wire has a resistance of 2.1 ohms.  The extension cord has
+100 meters of the wire has a resistance of 2.1 ohms.  The extension cord has
 this resistance going there and back so the total resistance in the
 wires is 4.2 ohms.
 
+The simplest method is to assume that the current in the single load is
+unchanged by additional resistance in the extension cord.
+
 $$ P = I^2 R = 2.4^2 4.2 = 24.2W $$
+
+We can also find the equivalent resistance for all three resistors and
+find the current.
+
+$$ I = 120 / (2.1 + 50 * 2.1) = 2.21 amps $$
+
+Notice that the small change in resistance only changes the current by
+0.2 amps.  The power we get using this number is
+
+$$ P = 2.2^2 4.2 = 20W $$
+
+This is still closest to 24W.
 
 }
 
@@ -231,7 +246,76 @@ Since the current doubles, $I^2 R$ goes up by a factor of four.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
+\setcounter{problem}{0}
 {\bf Quiz 3 \hfill ENSP 338 \hfill Fall 2014}
+
+\problem{}
+The voltage in an 120V RMS outlet oscillates back and forth between
+peaks 60 times per second.  Which of these are closest to the peak positive and negative
+voltages it reaches?
+
+a) +120V, -120V
+
+b. +170V, -170V
+
+c) +120V, 0V
+
+d. +170V, 0V
+
+\solution{
+120V is the RMS voltage so the peaks are 120V * sqrt 2 so about 170V.
+}
+
+\problem{}
+We have a circuit with a 120V wall outlet connected directly to a 1.7 ohm
+resistor.  Which of the graphs (on the screen) correctly displays the current
+and voltage?
+
+\includegraphics[width=4.0in]{quiz-03-2.pdf}
+
+% put the correct voltage phase shifted?
+
+\problem{}
+\begin{tabular}{c c c c c}
+       & radius & length & resistivity & resistance \\
+Wire 1 & r & l & $\rho$ & $R_1$\\
+Wire 2 & 2r & l & $\rho$ & $R_2$\\
+\end{tabular}
+
+We have two wires with the dimensions above.
+How are the two resistances related?
+
+a. $R_1 = 2 R_2$ \hfill b. $R_1 = 4 R_2$
+
+c. $R_1 = R_2 / 2 $ \hfill d. $R_1 = R_2 / 4 $
+
+
+\problem{}
+We are evaluating the present value of an identical positive payment 10 years in the
+future.  Person one has a discount rate of 5\% and person two has a
+discount rate of 7\%.  Which person considers the net present value to
+be larger?
+
+a) Person one
+
+b) Person two
+
+c) Cannot distinguish
+
+\solution{
+
+$$ PV = \frac{FV}{(1+r)^{10}} $$
+
+For person one, $1+r=1.05$ and for person two, $1+r=1.07$.  Since
+$1.07^{10} > 1.05^{10}$ the present value will be less for person one.
+
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+{\bf Quiz 4 \hfill ENSP 338 \hfill Fall 2014}
+
+
+
 
 \problem{}
 How much electricity is used?
@@ -243,14 +327,8 @@ How much money is spent?
 How much carbon is emitted?
 
 \problem{}
-Net present value question?
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-{\bf Quiz 4 \hfill ENSP 338 \hfill Fall 2014}
-
-
+Simple motor payback.  A motor costs X and has Y characteristics.  Used
+Z hours per day, how much will it consume?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
@@ -451,6 +529,9 @@ c) red
 \solution{b) green}
 \vfill
 
-
+\problem{}
+What is the rate of carbon emissions for a kerosene lantern?  Compare
+to the levelized carbon output for a solar lantern.  What is CO2eq /
+klmh for kerosene vs LED?
 
 \end{document}
