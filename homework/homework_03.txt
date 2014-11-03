@@ -3,8 +3,9 @@
 Due Date:  Mon 14 Oct 2013
 
 The problem set you turn in should be both legible and the methods and
-assumptions you are using must be clear.  I strongly suggest that
-you use diagrams where appropriate and clearly state your assumptions.
+assumptions you are using must be clear.  The point of the problem set
+is for you to communicate your analysis.  I strongly suggest that you
+use diagrams where appropriate and clearly state your assumptions.
 Typesetting of problem sets can increase the readability.  The homework
 will be graded on the clarity of the method as much as the correctness
 of the result.
