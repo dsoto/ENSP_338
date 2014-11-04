@@ -1764,7 +1764,7 @@ The sum of these three magnetic fields create a rotating magnetic field
 ![](../figures/3-phase-generator.jpg)
 
 ## Induction motor video
-[Induction motor video](http://www.youtube.com/watch?v=LtJoJBUSe28&list=TLmiKVvq4MYHnL-89BeJyEEqPBZSzC1sH9)
+![Induction motor video](http://www.youtube.com/watch?v=LtJoJBUSe28&list=TLmiKVvq4MYHnL-89BeJyEEqPBZSzC1sH9)
 
 ## Types of Motors
 - Permanent magnet motor
@@ -1826,7 +1826,7 @@ The sum of these three magnetic fields create a rotating magnetic field
 ![](../figures/squirrel-cage-3.jpg)
 
 ## Squirrel cage can motor
-[motor video](https://www.youtube.com/watch?v=P-eTLmJC2cQ)
+![motor video](https://www.youtube.com/watch?v=P-eTLmJC2cQ)
 
 
 ## ENSP 338, Lecture 19, Motor Systems
@@ -1872,5 +1872,329 @@ The sum of these three magnetic fields create a rotating magnetic field
 ##
 ![](../figures/paper-clip-5.jpg)
 
+
+
+## ENSP 338, Lecture 20, Lighting Physics
+### Professor Daniel Soto, Sonoma State University
+### Wednesday, 29 Oct 2014
+
+## Announcements
+
+<!-- we need a reading for this stuff -->
+
+## Learning Objectives
+- Understand basic principles of electricity to light conversion
+
+## Guiding Questions
+- What is the least amount of electricity/carbon we can use to get the
+  visibility we need?
+
+## Review
+
+# Light generation and Spectra
+
+## Photon Emission
+- Light is generated when an electron changes its energy level
+- The energy of the photon emitted is the difference in this energy
+  level
+
+## Photon Emission
+![](../figures/photon-emission.jpg)
+
+## Electromagnetic spectrum
+- Radiowaves, visible light, and x-rays are all electromagnetic
+  radiation
+- The only difference between these is the frequency and wavelength of
+  the radiation
+
+## Electromagnetic spectrum
+- Under some conditions materials emit a continuous spectrum
+- Under other conditions materials emit a discrete spectrum
+
+## Visible spectrum
+- Visible light is only a small portion of the electromagnetic spectrum
+- Ultraviolet light and infrared radiation are the wavelengths just
+  outside our visible range
+- When we perceive white light, it is because multiple colors of light
+  are present
+- It is a difficult problem to create the right balance of color to find a
+  white that people find appealing
+
+## Visible spectrum
+![](../figures/spectrum-2.jpg)
+
+
+## Thermal and spectral emission
+![](../figures/spectrum-3.jpg)
+
+
+## Eye spectrum response
+- The rods and cones in our eyes are tuned to detect certain colors or wavelengths of light
+
+## Eye spectrum response
+![](../figures/eye-sensitivity.jpg)
+
+
+## Blackbody spectrum
+- Used to approximate lighting spectra
+- Is a good model for many hot objects
+- You may have seen the Stefan-Boltzmann law $P=A\epsilon\sigma T^4$ in your thermal class
+
+
+## Blackbodies
+![Black body spectrum](../figures/color-temp-4.png)
+
+## Solar Spectrum
+- The light we are most accustomed to is the sun
+- The sun can be modeled as a black body at a temperature of about 5800 Kelvin
+
+
+## Solar Spectrum
+![](../figures/spectrum-solar.png)
+
+
+# Illumination Units
+
+## Luminous flux
+## Illuminance
+## Luminance
+## Luminous intensity
+
+## Review of units
+- We need units to express solid angles
+- We start by reviewing the radian
+
+## Radians
+- The radian is defined as the arc length of an angle divided by its radius
+- The radian is the most natural unit of angle
+- The circumference of a circle is $2 \pi r$ so there are $2 \pi$ radians in a circle
+- $2 \pi$ (6.28) radians = 360 degrees
+- [Radian GIF Wikipedia](http://en.wikipedia.org/wiki/Radian#mediaviewer/File:Circle_radians.gif)
+
+## Solid Angle
+- The Steradian is the unit of measure
+- Now we have a solid angle or cone
+- The steradian is the surface area of the spherical surface divided by the radius squared
+- The area of a sphere $4 \pi r^2$ so there are $4 \pi$ steradians in a sphere
+
+
+## Solid angle
+![](../figures/steradian-wikipedia.png)
+
+## Radiometric Quantities
+- Purely based on the energy content
+- Radiant flux or radiant power (Watts)
+- Irradiance (Watts per square meter)
+
+## Photopic Quantities
+- Based on the energy content and our perception
+- Luminous flux
+- Illuminance
+- Luminous intensity
+- Luminous energy
+
+## Luminous flux
+- Lumens
+- Light bulbs are about 500-2000 lumens
+- The radiant power weighted by the the photopic luminosity function
+- Can think of as "eye watts"
+- Most relevant measure for a lightbulb's total output
+
+## Illuminance
+- Lux - lumen per square meter
+- Luminous flux per unit area
+- Most relevant measure for a workspace
+
+## Luminous intensity
+- Candela - lumens per steradian
+- Also candlepower
+
+## Luminous energy
+- Luminous flux times time
+- Lumen second
+- Kilolumen hour
+
+
+## Units
+- Lux, illuminance, luminous flux per unit area, lumen per square meter
+- Lumen, luminous flux
+- Candela, luminous intensity, lumen per steradian
+- Candela, 1 candlepower = 0.981 candela
+- Foot-Candle, lm/ft^2, 10.76 lux = 1 foot-candle
+
+##
+![](../figures/inverse-square-lighting.pdf)
+
+
+
+<!--
+- measure light from lamp
+- demonstrate dropoff in intensity
+- estimate total lumens for light
+-->
+
+## Illuminance levels
+- Moonlight 0.02 fc
+- Hallways 5-10 fc
+- Classrooms 20-50 fc
+- Offices 30-75 fc
+- Direct daylight 5000-10000 fc
+
+
+<!--
+- measure lux from overhead
+- measure lux with lighting
+- measure lux with daylighting
+-->
+
+
+## ENSP 338, Lecture 21, Lighting Technology
+### Professor Daniel Soto, Sonoma State University
+### Monday, 03 Nov 2014
+
+## Announcements
+- Syllabus update
+- Optional topics
+
+## Learning Objectives
+- Understand various lighting technologies
+<!-- - Measure inverse square law? -->
+
+
+## Dominant Lighting Technologies
+- Incandescent lighting
+- Fluorescent
+- Light Emitting Diodes (LED)
+
+
+## Incandescent
+- Uses a hot filament
+- Can be modeled as a black-body radiator
+- Much of radiation is heat
+- New legistlation limits use
+
+## Fluorescent
+- Excited mercury vapor emits UV radiation
+- Uses phosphor to convert UV photons to visible
+- Spectrum does not resemble black body
+
+# Incandescent
+
+## Incandescent Spectrum
+![Dr. Les Tomley, SJSU](../figures/tungsten-spectrum-sjsu.jpg)
+
+
+## Fluorescent bulbs
+
+## Fluorescent
+![](../figures/fluorescent-lamp-1.jpg)
+
+## Fluorescent bulbs
+- Come in several sizes
+- T12 12 eigths or 1.5 inches in diameter
+- T8 8/8" or one inch in diameter
+- T5 is 5/8" diameter
+
+## Fluorescent
+![](../figures/fluorescent-lamp-2.jpg)
+
+## Fluorescent
+![](../figures/fluorescent-lamp-3.jpg)
+
+## Fluorescent
+![](../figures/fluorescent-retrofit.jpg)
+
+## Fluorescent spectrum
+![](../figures/fluorescent-spectrum-sjsu.jpg)
+
+
+## Light Emitting Diodes (LED)
+
+## LED bulbs
+- Light emitting diode (LED)
+- Very similar to diodes and photovoltaics
+- Very narrow spectrum
+- White LED bulbs use phosphors to create white spectrum
+
+## LED
+![](../figures/led-1.jpg)
+
+## LED
+![](../figures/led-2.jpg)
+
+## LED
+![](../figures/led-3.jpg)
+
+## LED bulb internals
+![](../figures/led-cree-bulb-internals.jpg)
+
+## LED bulb internals
+![](../figures/cree-4flow.jpg)
+
+## LED spectrum
+![](../figures/LED-spectrum-sjsu.jpg)
+
+## LED spectrum
+![](../figures/spectrum-led.jpg)
+
+## Haitz's Law
+- LED lighting is still improving
+- Cost per lumen falls by a factor of 10 each decade
+- LED light per package increases by a factor of 20 each decade
+
+## Efficacy
+
+| Type | Efficacy (lumens per watt) |
+|------|----------------------------|
+| LED | 50-100 |
+| Tungsten Incandescent | 15 |
+| Fluorescsent T5 | 70-100 |
+
+Source: Wikipedia
+
+# Lighting Qualities
+
+## Bulb spectra
+- What wavelengths to lights emit?
+
+## Various spectra
+![](../figures/spectrum-lighting.jpg)
+
+## Bulb spectra
+- How do we determine if a spectrum is acceptable?
+- Color rendering index
+- Color temperature
+
+
+## Color Rendering Index
+- A scale of how colors look compared to sunlight
+
+
+## Color Rendering Index
+![](../figures/color-rendering-index-1.jpg)
+
+##
+![](../figures/color-rendering-index-2.jpg)
+
+
+
+## Color Temperature
+![Black body spectrum](../figures/color-temp-4.png)
+
+## Color Temperature
+![](../figures/CIE-color-temperature.png)
+
+## Color Temperature
+![](../figures/color-temp-1.jpg)
+
+## Color Temperature
+![](../figures/color-temp-2.jpg)
+
+## Color Temperature
+![](../figures/color-temp-3.jpg)
+
+
+## Lamp CRI and CCT
+![](../figures/lamp-summary.jpg)
 
 
