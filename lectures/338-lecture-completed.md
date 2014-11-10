@@ -1764,7 +1764,7 @@ The sum of these three magnetic fields create a rotating magnetic field
 ![](../figures/3-phase-generator.jpg)
 
 ## Induction motor video
-![Induction motor video](http://www.youtube.com/watch?v=LtJoJBUSe28&list=TLmiKVvq4MYHnL-89BeJyEEqPBZSzC1sH9)
+[Induction motor video](http://www.youtube.com/watch?v=LtJoJBUSe28&list=TLmiKVvq4MYHnL-89BeJyEEqPBZSzC1sH9)
 
 ## Types of Motors
 - Permanent magnet motor
@@ -1826,7 +1826,7 @@ The sum of these three magnetic fields create a rotating magnetic field
 ![](../figures/squirrel-cage-3.jpg)
 
 ## Squirrel cage can motor
-![motor video](https://www.youtube.com/watch?v=P-eTLmJC2cQ)
+[motor video](https://www.youtube.com/watch?v=P-eTLmJC2cQ)
 
 
 ## ENSP 338, Lecture 19, Motor Systems
