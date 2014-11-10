@@ -312,36 +312,116 @@ $1.07^{10} > 1.05^{10}$ the present value will be less for person one.
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
+\setcounter{problem}{0}
 {\bf Quiz 4 \hfill ENSP 338 \hfill Fall 2014}
 
 
+\problem{}
+
+A motor has a power of 3600W and a power factor of 0.5.  If it is fed by
+a 120V supply, how much current flows in the wires?
+
+a) 30 A
+
+b) 60 A
+
+c) 120 A
+
+\solution{
+The RMS current value is found from the apparent power, or the
+hypotenuse of the power triangle.
+
+$$ S \cdot PF = P = 3600W $$
+$$ S = 3600W / 0.5 = 7200 VA $$
+
+$$ I_{RMS} = S / V = 7200 VA / 120V = 60 A $$
+
+}
+
 
 
 \problem{}
-How much electricity is used?
+
+How much real power is drawn by the motor in the above example?
+
+a) 1800 W
+
+b) 3600 W
+
+c) 3600 VA
+
 
 \problem{}
-How much money is spent?
+
+For the motor above, what is the apparent power drawn by the motor?
+
+a) 3600 VA
+
+b) 7200 VA
+
+c) 7200 W
+
 
 \problem{}
-How much carbon is emitted?
 
-\problem{}
-Simple motor payback.  A motor costs X and has Y characteristics.  Used
-Z hours per day, how much will it consume?
+By how much does the current decrease if the power factor changes to
+0.9 without changing the real power demanded?
+
+a) 27 amp reduction
+
+b) 30 amp reduction
+
+c) 17 amp reduction
+
+\solution{
+The current with a power factor of 0.5 is 60A.
+
+If we change the power factor to 0.9, the apparent power will be
+
+$$ S = 3600 W / 0.9 = 4000 VA $$
+
+and the current will be
+
+$$ I = 4000 VA / 120V = 33 A $$
+
+The reduction is then 60A - 33A = 27A
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 {\bf Quiz 5 \hfill ENSP 338 \hfill Fall 2014}
 
-Lighting Stuff
 
+\problem{Motor concepts}
+Which of the following are true
+
+a) A static magnetic field can induce a current in a wire.
+b) A static current can create a changing magnetic field
+c) A changing magnetic field can induce a current in a wire
+
+\solution{
+
+}
+
+The purchase cost of a motor is usually greater than the electricity
+used over its lifetime.
+
+a) True
+b) False
+c) Cannot distinguish
+\solution{False, electricity often exceeds motor purchase cost by at
+least a factor of 10.}
+\vfill
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 {\bf Quiz 6 \hfill ENSP 338 \hfill Fall 2014}
 
 
+\problem{}
+Simple motor payback.  A motor costs X and has Y characteristics.  Used
+Z hours per day, how much will it consume?
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -361,6 +441,13 @@ Carbon intensity and circuits
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{cruft}
+
+\problem{volumetric and demand}
+problem with graphical power demand
+ask students to recognize energy demanded, demand charge, cost of
+energy, cost of demand
+
+\problem{}
 
 Exercise 3
 - How much energy is consumed by a 150W load that runs for 7 hours?
@@ -480,9 +567,7 @@ permute the fractions
 % tariff and economics questions
 
 % AC/DC questions
-\tf{A static magnetic field can induce a current in a wire.}
-\solution{False, only changing magnetic fields, from the perspective of
-the wire, can induce current.}
+
 \vfill
 
 \tf{Synchronous speed in an AC motor depends on the frequency of the
@@ -496,12 +581,6 @@ voltage source.}
 
 \tf{An ideal diode only allows current to flow in one direction.}
 \solution{True}
-\vfill
-
-\tf{The purchase cost of a motor is usually greater than the electricity
-used over its lifetime.}
-\solution{False, electricity often exceeds motor purchase cost by at
-least a factor of 10.}
 \vfill
 
 
@@ -533,5 +612,17 @@ c) red
 What is the rate of carbon emissions for a kerosene lantern?  Compare
 to the levelized carbon output for a solar lantern.  What is CO2eq /
 klmh for kerosene vs LED?
+
+\problem{}
+motor question where you find the power consumed.  apparent power
+consumed is one of the options
+should be clarify the problems students are having on the homework motor problem.
+
+also draw the wires serving the load and ask how much power is consumed
+in the load vs the motor
+
+\problem{}
+Money spent on different gauge wires.  calculate wire loss for different
+gauges and the conserved cost of energy?
 
 \end{document}
