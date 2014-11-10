@@ -486,6 +486,7 @@ c) Inductive loads produce positive reactive power
 d) A capacitive load can be added to provide negative reactive power and
 reduce the positive reactive power from the inductive load.
 
+\newpage
 }
 
 \problem{High Voltage Transmission}
@@ -496,13 +497,23 @@ residential service at 24 Volts.
 
 \solution{
 
-Transmission losses will be lower as we go to higher transmission
+1. Transmission losses will be lower as we go to higher transmission
 voltages since less current must be used for the same power transmission
 at higher voltages.
 
-Wiring costs are lowered in a home since not as much current must be
-carried.
+The current that must be carried for a given power is inversely
+proportional to the voltage.  The resistive losses in the wire are
+proportional to the square of the current by $P = I^2R$.  Thus a 10-fold
+increase in the voltage leads to a 100-fold decrease in the power lost
+to resistive heating in the wires.
 
+2. Wiring costs are lowered in a home since not as much current must be
+carried in the wires.
+
+3. Traditionally, AC is easier to convert between voltage levels but
+technologies to raise and lower DC voltages are developing rapidly.
+
+\newpage
 }
 
 
@@ -511,12 +522,12 @@ carried.
 \solution{
 a) The real power is the power factor times theh apparent power
 
-$$ P = 0.7 \cdot 900 kVA = 630 kW $$
+$$ P = 0.7 \cdot \SI{900}{\kilo\volt\ampere} = \SI{630}{\kilo\watt} $$
 
 b) at the max carrying capacity of the transformer (1000 kVA), the real
 power delivered will be
 
-$$ 1000 kVA \cdot 0.7 = 700 kW$$
+$$ \SI{1000}{\kilo\volt\ampere} \cdot 0.7 = \SI{700}{\kilo\watt}$$
 
 So 70 kW can be added before exceeding the capacity of the transformer.
 
@@ -524,6 +535,8 @@ c) If the power factor is improved to 1, the real power and apparent
 power will be equal and the transformer will be able to provide enough
 current to provide 1000 kW of power.  This means that 370 kW more can be
 supplied.
+
+\newpage
 }
 
 \problem{REEPS2 3.11}
@@ -537,6 +550,12 @@ $$ 7200W = 240V \cdot I $$
 $$ I = 30A $$
 
 According to table 2.3 in REEPS2, 10 ga wire can handle 30A.
+
+A common mistake is to neglect the power factor and calculate the
+current based on the real power.
+
+Some folks include the wire resistance in the calculation of the current
+which makes a small change.
 
 b) To find the power loss, we get the wire resistance.  10 ga wire has a
 resistance of 0.0999 ohms per 100 ft.  We need 200 feet of wire to
@@ -552,10 +571,14 @@ we can find the real and reactive power of the motor.
 
 real power was given as 3600W
 
-
+\newpage
 }
 
 \problem{REEPS2 3.12}
+\solution{
+See written notes.
+\newpage
+}
 
 \problem{Time Spent}
 Estimate how much time you spent working on this problem set to the
@@ -597,14 +620,57 @@ supply, and load.
 \quizbox{What is the RMS voltage on the primary (distribution,
 high-voltage side of the transformer?}
 
+\solution{
+We know that the phase to phase voltage is 21 kV.  However, the
+transformer is not connected phase to phase but phase to neutral.
+The phase to phase voltage is bigger than the phase to neutral by a
+factor of $\sqrt{3}$
+% phase to phase voltage is root 3 bigger than phase to neutral?
+% phasetophase = Asin (wt) - Asin(wt + phi) = 2 A cos(wt + phi/2) sin(phi/2)
+% we get the signal at wt shifted by phi/2 multiplied by 2 sin(phi/2)
+$$ 21 kV / \sqrt{3} = 12.1 kV $$
+
+}
+
+
 \quizbox{What is the rms voltage on the secondary (customer, low-voltage)
 side of the transformer?}
+
+\solution{
+A common mistake on this problem is to incorrectly assume that the
+voltage on the primary is the phase to phase voltage of 21 kV instead of
+the phase to neutral voltage specified by the problem.
+
+Another common mistake is to attempt to recreate the RMS math
+unnecessarily.
+
+$$ 12.1 kV / 50 = 243 V $$
+}
 
 \quizbox{Suppose the customer's load is 14.4 kW.  What is the current on the
 primary (high-voltage) side of the transformer?}
 
+
+\solution{
+We find the current on the customer side using the power and voltage and
+then use the ratio of turns
+to find the current on the primary or grid side of the transformer.
+
+On the customer side
+$$ P = IV = 14.4 kW = 243V I$$
+$$ I = 14.4 kW / 243V = 59.5 A $$
+On the grid side,
+$$ 59.5A / 50 = 1.2 A $$
+}
+
 \quizbox{Which wires need to be thicker: those on the primary or secondary
 side?}
+\solution{
+Since the customer or secondary side is carrying 50 times more current,
+those wires must be thicker and lower resistance to have the same
+resistive losses.
+\newpage
+}
 
 % \subproblem Sketch a diagram that explains how one could use the same transformer
 % with a different connection to also provide 120V service.
@@ -622,9 +688,37 @@ supply, and load.
 \quizbox{If this transformer is supplying a purely resistive load of 10 kW at
 120V on the secondary side, what is the current in the primary winding?}
 
+\solution{
+
+A common mistake is to mistake the primary and secondary voltages.  To
+avoid this inspect the question and ask yourself if the grid voltage is
+higher than the household voltage.
+
+We assume that the power on the primary side is enough to power the 10
+kW load as well as the heating in the transformer.
+
+$$ P_{in} \eta = P_{out} $$
+$$ 10 kW / \eta = 10 kW / 0.96 = 10.4 kW $$
+
+We then use this power to find the current.  The voltage on the primary
+side is
+
+$$ 120V * 5 = 600V $$
+
+The necessary current to provide 10.4 kW is then
+
+$$ 10.4 kW / 600 V = 17.3 amps $$
+
+}
+
 \subproblem Explain how the answer would differ if the load still measures 10kW of
 real power, but is not purely resistive.
 
+\solution{
+The reactive power would add current to the transformer and require more
+current on both sides of the transformer.
+\newpage
+}
 
 \problem{Motor Problem}
 
@@ -632,10 +726,20 @@ A single-phase 120V, 2 hp motor operates at a power factor of 0.70 and
 an efficiency of 82\% at full load.  It operates for a duty cycle of 12
 hours in every 24-hour period.  The price of electricity is 0.15 USD/kWh.
 
+% scaffold this better
+% what is the mechanical power delivered
+% what is the electrical power consumed?
+% what is the apparent power?
+
 \quizbox{What is this motor's annual operating cost (ignoring
 maintenance)?}
 
 \solution{
+The nameplate capacity, 2 horsepower, is the mechanical energy
+delivered.  We need to convert this to the electrical power, in kW
+needed to deliver this mechanical power.
+
+
 To begin, we estimate the electricity use over one year.  We then
 multiply by the unit cost of electricity.
 We calculate the electrical power for the motor from the delivered
@@ -646,6 +750,11 @@ We then calculate the energy over the year.
 $$ 1820W \cdot 365 days \cdot \ufrac{12 hours}{day} = 7969 kWh$$
 Finally, the price paid for the electricity
 $$7969 kWh \cdot 0.15 USD/kWh = 1195 \textrm{USD per year}$$
+
+A common mistake is to calculate the apparent power and use that to
+calculate the cost of electricity.  A way to avoid this is to notice
+that apparent power has units of VA and power has units of W.
+
 }
 
 \quizbox{What would be the savings due to an efficiency increase from 82 to
@@ -713,12 +822,12 @@ color of the object will be different.}
 
 A lamp produces an illuminance of 60 lux on a desk 2 meters below.
 
-\subproblem If this lamp has a even illumination over all angles, what will the
+\subproblem If this lamp has an even illumination over all angles, what will the
 illuminance be at 4 meters away? (3 pts)
 
 \solution{
 By the inverse square law, since the distance increases by a factor of
-two the illumanance will decrease by a factor of 4 and be 15 lux.
+two the illuminance will decrease by a factor of 4 and be 15 lux.
 }
 
 \subproblem What is that illuminance in foot-candles on the desk surface? (2
@@ -938,5 +1047,12 @@ What is the current through each bulb?
 
 \subproblem
 Through the entire string?
+
+\problem{Bonus}
+Using the trigonometric identities, show that the phase to phase formula
+is blah.
+
+\problem{Bonus}
+
 
 \end{document}
