@@ -152,7 +152,7 @@ The tentative project schedule is listed here:
 | Mon 13 Oct 2014 | Outline Feedback     |
 | Mon 27 Oct 2014 | First draft          |
 | Mon 03 Nov 2014 | First draft feedback |
-| Wed 19 Nov 2014 | Final Report         |
+| Mon 24 Nov 2014 | Final Report         |
 
 ## Homework
 
