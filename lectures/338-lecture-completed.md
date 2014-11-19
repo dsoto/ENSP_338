@@ -2198,3 +2198,343 @@ Source: Wikipedia
 ![](../figures/lamp-summary.jpg)
 
 
+
+## ENSP 338, Lecture 22, Generator Physics
+### Professor Daniel Soto, Sonoma State University
+### Wednesday, 05 Nov 2014
+
+## Announcements
+- Homework 4 due today
+
+## Learning Objectives
+- Understand the basics of generator physics
+
+## Electromagnetic induction
+- A changing magnetic field can induce a current in a wire
+
+## Magnetic Flux
+- The sum of the magnetic field passing through a surface
+- When we create a loop of wire, the sum of the field passing through
+  the loop is the relevant magnetic flux
+
+<!-- draw out flux lines -->
+<!-- make generator? -->
+
+## Faraday's Law
+- The induced electromotive force in anay closed circuit is equal to the
+  negative of the time rate of change of the magnetic flux through the
+  circuit
+- More simply: a changing magnetic field induces voltages and currents
+
+## Lenz's Law
+- An induced electromotive force always gives rise to a current whose
+  magnetic field opposes the original change in magnetic flux
+- More simply: nature abhors a change in flux (Griffiths)
+
+## Generation
+- We spin a magnet within a coil of wire and we create a voltage in the
+  coil of wire
+
+## Generation
+![](../figures/generator-exciter.pdf)
+
+## Generation
+- Lenz's law gives rise to a magnetic field that repels the spinning
+  magnet
+- Increasing the load, increases the current and creates more resistance
+  to the spinning magnet
+- To maintain speed, we must deliver more energy to the magnet
+- We usually do this by delivering more steam
+
+## Generation
+- Most generators use an coil electromagnet to create the spinning magnetic
+  field
+
+## Generation supply and demand
+![](../figures/steam-governor.pdf)
+
+## Generation supply and demand
+![](../figures/supply_demand_bathtub.pdf)
+
+## Coal plant
+![](../figures/coal-plant-diagram.pdf)
+
+## Exciter current
+![](../figures/generator-exciter.pdf)
+
+## Exciter current
+- Increasing the exciter current increases the magnetic field and flux in the coil
+  and increases the voltage induced
+- This allows us to compensate for any reactive power needed by the loads
+
+
+
+## ENSP 338, Lecture 23, Generator and Grid Technology
+### Professor Daniel Soto, Sonoma State University
+### Monday, 10 Nov 2014
+
+## Announcements
+- Registration appointments Nov 17-21
+
+
+## Learning Objectives
+- Deeper understanding of grid technology and economics
+<!-- - Power auction? -->
+<!-- - Screening curves -->
+
+## Guiding questions
+- Do all power plants run all of the time?
+- How do we schedule which power plants run when?
+
+# Electricity Demand
+
+## Demand
+![](../figures/electricity_demand.pdf)
+
+
+## Load Duration Curve
+![](../figures/load_duration_curve.pdf)
+
+## Load Duration Curve
+![](../figures/load_duration_curve_2.pdf)
+
+## Load duration curve
+Mali Village Research Site
+![](../figures/GHTC_load_duration_curve.pdf)
+
+
+## Demand
+![](../figures/stacked_demand.pdf)
+
+
+
+
+## Steam turbines
+- Most electricity is created by using a heat source to create steam and
+  spin a turbine connected to a generator
+- Wind and hydropower do not create steam but still spin a generator
+
+## Steam turbine
+![](../figures/steam_turbine.jpg)
+
+## Grid
+- Power generated is fed to a grid
+
+## Grid
+![](../figures/grid_masters.pdf)
+
+## Grid control
+- Grid must control for voltage and frequency
+
+## Frequency control
+![](../figures/supply_demand_bathtub.pdf)
+
+## Electricity Generation
+![](../figures/Annual_electricity_net_generation_in_the_world.png)
+
+## Electricity prices relatively stable
+- Electricity is regulated
+- Electricity uses several sources of primary energy
+
+
+## U.S Electricity Price
+![](../figures/US_Electricity_Prices_1970-2008.PNG)
+
+## World Oil Price
+![](../figures/World_Oil_Prices_1970-2008.PNG)
+
+## ENSP 338, Lecture 24, Carbon Intensity
+### Professor Daniel Soto, Sonoma State University
+### Wednesday, 12 Nov 2014
+
+## Announcements
+- Homework 5 due Monday 1 Dec
+- Moodle links
+- [UCSB Master's Program](http://www.bren.ucsb.edu/academics/MESM.html)
+- City of Benicia Internship
+- Energy in the news?
+
+## Learning Objectives
+- What is cost per unit of electricity delivered?
+- What is the carbon per unit of electricity delivered?
+
+## What fraction of carbon emissions?
+- Electricity is responsible for about a third of United States carbon dioxide
+  emissions
+- Different electricity generation technologies emit different levels of
+  CO~2~
+
+## Heat rate
+- Thermal energy required per unit of electrical energy produced
+- Same quantity as efficiency but in different units
+- Expressed in British thermal units per kilowatt hour (BTU/kWh)
+
+## Heat rate and efficiency
+$$\textrm{Efficiency} = \frac{\textrm{Electrical energy out}}{\textrm{Thermal
+  energy in}} $$
+
+- Efficiency uses the same units for energy in and energy out
+- Heat rate uses different units
+- They are related by a simple unit conversion
+
+## Heat rate and carbon dioxide
+- Each type of fuel releases a different amount of CO~2~ for the mass
+  burned or energy released
+
+
+## Carbon Intensity
+- Expresses that mass of carbon or carbon dioxide released for each unit
+  of energy produced
+- In the future, utilities will have to add the cost of carbon emissions
+  as a cost.
+
+## Carbon Intensity Data
+- Available at EPA eGRID
+- Environmental Protection Agency
+- Emissions and Generation Resource Integrated Database
+
+## Generation Mix
+![EPA eGrid](../figures/egrid.pdf)
+
+## Carbon Intensity
+
+| Technology | Carbon Intensity (lb CO~2~/MWh) |
+|------------|---------------------------------|
+| Coal       | 2249|
+| Natural Gas |1135 |
+| Hydro, Wind, Solar, Nuclear | 0 |
+| EPA Limit for Coal | 1100 |
+| EPA Limit for Natural Gas | 1000 - 1100 |
+
+## State Electricity Carbon Intensity Averages
+
+| State      | Carbon Intensity (lb CO~2~/MWh) |
+|--|--|
+| Washington | 287  |
+| California|  633  |
+| Virginia  |1232  |
+| West Virginia |2027  |
+
+## Carbon Price Data
+![](../figures/california-carbon-price.png)
+
+
+
+
+## Levelized cost of electricity (LCOE)
+- Fixed costs
+    - Do not change with amount of electricity sold
+- Variable costs
+    - Are proportional to amount of electricity sold
+
+## Fixed cost
+- Annualized cost to build plant
+- Salary of workers
+- Insurance
+
+## Variable cost
+- Cost of fuel
+- Maintenance
+- cost/kwh = cost/btu * btu/kwh
+- Future may include carbon tax or costs
+
+## LCOE
+
+$$ \textrm{LCOE (\$/kWh)}
+   = \frac{\textrm{Annual fixed cost} +
+           \textrm{Annual variable cost}}
+          {\textrm{Annual electricity output}} $$
+
+## Cost Data
+
+- [Wikipedia LCOE Link](http://en.wikipedia.org/wiki/Cost_of_electricity_by_source)
+- [EIA Capital Cost Link](http://www.eia.gov/forecasts/capitalcost/)
+
+
+## ENSP 338, Lecture 25, Optional Topics: Rectifiers and Inverters
+### Professor Daniel Soto, Sonoma State University
+### Monday, 17 Nov 2014
+
+## Announcements
+- Lexicon of Sustainability internships
+- Brown Bag lecture on my research Tuesday at lunch
+- 2 unit research internships available with me spring semester
+
+## Learning Objectives
+- Understand voltage conversion techniques
+
+## Agenda
+- Non-linear circuit elements
+- AC/DC conversion
+- DC/AC conversion
+- DC/DC conversion
+
+## Diodes
+- Diodes allow one-way current flow
+
+## Diodes
+![](../figures/reeps-diode.pdf)
+
+## Transistors
+- Transistors are electrically controlled switches
+
+## Transistors
+![](../figures/reeps-transistor.pdf)
+
+## Non-linear elements
+- The transistor and the diode have a non-linear relationship between
+  current and voltage
+- Compare this to the resistor
+
+## Voltage conversion
+- We can use these elements to convert between AC and DC
+
+## AC to DC conversion
+
+## Half-wave rectifier
+![](../figures/reeps-half-wave-rectifier.pdf)
+
+## Half-wave rectifier with capacitor
+![](../figures/reeps-half-wave-operation.pdf)
+
+## Full-wave rectifier
+![](../figures/reeps-full-wave-rectifier.pdf)
+
+## Three phase rectifiers
+![](../figures/reeps-three-phase-rectifier.pdf)
+
+## Switching power supply
+![](../figures/reeps-switch-mode.pdf)
+
+## Power factor
+- Notice that the current and voltage are not in phase (or the same
+  shape)
+- This leads to a decrease in power factor
+- Power supplies, unfortunately, aren't analyzed by using the power
+  triangle
+
+## Uses
+- Electronic power supplies
+- Off-grid wind battery charging
+
+## DC/DC Converters
+- Linear voltage regulators
+- Switching voltage regulators
+
+## Energy Star Standards
+- Active mode efficiency
+- No-load efficiency
+- Power factor requirements
+
+## Inverters
+![](../figures/reeps_inverter.pdf)
+
+## Uses
+- Motor control
+- Solar installations
+- High Voltage DC interconnection
+
+## High Voltage DC interconnection
+- ![](../figures/reeps-hvdc-link-2.pdf)
+- Why is the DC connection necessary?
+
