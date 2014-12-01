@@ -105,6 +105,10 @@ impacts of electricity.
 |        27 | Mon 24 Nov 2014 | Presentations                 |
 |        28 | Mon 01 Dec 2014 | Presentations                 |
 |        29 | Wed 03 Dec 2014 | Wrapup                        |
+|        30 | Mon 08 Dec 2014 | Final Exam                    |
+
+The final exam will be held on Monday December 8th from 2:00 pm - 3:50
+pm in the ETC.
 
 ## Readings
 
@@ -178,7 +182,7 @@ The tentative homework schedule is listed here:
 | Wed 12 Nov 2014 | HWM1-3     |
 | Mon 17 Nov 2014 | Homework 5 |
 | Mon 24 Nov 2014 | HWM 4      |
-| Mon 01 Dec 2014 | HWM 5      |
+| Mon 08 Dec 2014 | HWM 5      |
 
 ## Classroom Work
 

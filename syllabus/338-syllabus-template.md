@@ -76,6 +76,9 @@ impacts of electricity.
 
 {{ d['course-schedule.md'] }}
 
+The final exam will be held on Monday December 8th from 2:00 pm - 3:50
+pm in the ETC.
+
 ## Readings
 
 The required text for this course is:
